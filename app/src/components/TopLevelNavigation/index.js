@@ -5,6 +5,13 @@ import { createSelector } from 'reselect';
 import { selectTopLevelNavigationReducer } from '../../state/topLevelNavigationReducer/reducer';
 import styles from './styles';
 import MainApplicationNavigation from '../MainApplicationNavigation';
+import OnboardingScreen from '../OnboardingScreen';
+import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
+
+const {
+ popRoute,
+ pushRoute
+} = navigationActions;
 
 const { View, NavigationExperimental } = ReactNative;
 const { CardStack: NavigationCardStack } = NavigationExperimental;
@@ -19,7 +26,7 @@ export class TopLevelNavigation extends Component {
   renderScene(props) {
     return {
       mainApplication: <MainApplicationNavigation />,
-      // onboarding: <OnboardingNavigation />
+      onboarding: <OnboardingScreen />
     }[props.scene.route.key]
   }
 
@@ -30,6 +37,7 @@ export class TopLevelNavigation extends Component {
         style={styles.main}
         navigationState={this.props.TopLevelNavigationReducer}
         renderScene={this.renderScene}
+        onNavigate={() => {}}
       />
     );
   }
