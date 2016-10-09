@@ -5,7 +5,7 @@ const initialState = {
   index: 0,
   routes: [
     {
-      key: 'topLevelNavigationReducer-initial-card',
+      key: 'mainApplication',
       index: 0,
     },
   ],
