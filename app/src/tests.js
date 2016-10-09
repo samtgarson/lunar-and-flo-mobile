@@ -19,4 +19,5 @@ config.ignore = function babelIgnore(filename) {
 };
 
 require('babel-register')(config);
+require('babel-polyfill');
 require('react-native-mock/mock');

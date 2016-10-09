@@ -6,9 +6,9 @@
     "node": ">=4",
     "npm": ">=3"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/thebakeryio/baker.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebakeryio/baker.git"
   },
   "license": "MIT",
   "scripts": {
@@ -25,6 +25,7 @@
     "server:debug": "npm run mongo && ./node_modules/.bin/baker run --forever --node_dev --debug ./server/src",
     "server:watch": "npm run mongo && ./node_modules/.bin/baker run --forever --node_dev --watch ./server/src ./server/src",
     "setup": "./node_modules/.bin/baker run ./.baker/generate.js app",
+    "test": "mocha node_modules/baker-scripts/config/test-setup.js --require app/src/tests.js",
     "test:app": "./node_modules/.bin/baker test-react-native ./app/src/tests.js ./app/src/**/*.test.js",
     "test:baker": "./node_modules/.bin/baker test ./.baker/generators/test/tests/**/*.js",
     "test:server": "./node_modules/.bin/baker test ./server/tests/**/*.js",
@@ -42,6 +43,8 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "mockery": "^1.7.0",
+    "redux-saga": "^0.12.0",
+    "redux-saga-test-plan": "^1.3.1",
     "shelljs": "^0.6.0",
     "yeoman-assert": "^2.2.1",
     "yeoman-environment": "^1.6.1",
