@@ -9,8 +9,6 @@
   },
   "dependencies": {
     "immutable": "^3.8.1",
-    "parse": "1.9.2",
-    "parse-graphql-client": "^0.2.0",
     "react": "15.3.2",
     "react-native": "^0.34.0",
     "react-native-navigation-redux-helpers": "^0.4.1",

@@ -2,15 +2,11 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import { fromJS } from 'immutable';
 import createSagaMiddleware from 'redux-saga';
 import devTools from 'remote-redux-devtools';
-import Parse from 'parse/react-native';
 import createReducer from './reducers';
 import sagas from '../sagas';
 import Settings from '../settings';
 
 const settings = Settings.load();
-
-Parse.initialize(settings.parseServerApplicationId);
-Parse.serverURL = settings.parseServerURL;
 
 const sagaMiddleware = createSagaMiddleware();
 
