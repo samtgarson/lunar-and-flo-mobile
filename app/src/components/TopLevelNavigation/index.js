@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 import { selectTopLevelNavigationReducer } from '../../state/topLevelNavigationReducer/reducer';
+import { fetchUser } from '../../state/topLevelNavigationReducer/actions';
 import styles from './styles';
 import MainApplicationNavigation from '../MainApplicationNavigation';
 import OnboardingScreen from '../OnboardingScreen';
@@ -21,6 +22,10 @@ export class TopLevelNavigation extends Component {
     super(props);
 
     this.renderScene = this.renderScene.bind(this);
+  }
+
+  componentDidMount () {
+    this.props.dispatch(fetchUser())
   }
 
   renderScene(props) {
@@ -51,7 +56,7 @@ TopLevelNavigation.propTypes = {
 
 function mapDispatchToProps(dispatch) {
   return {
-    dispatch,
+    dispatch
   };
 }
 

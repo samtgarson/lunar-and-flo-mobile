@@ -1,5 +1,5 @@
 import {
-  UPDATE_USER,
+  UPDATE_USER
 } from '../action-types';
 
 export function updateUser(user) {

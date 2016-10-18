@@ -5,15 +5,17 @@ import { FETCH_USER } from '../state/action-types'
 import { selectUserReducer } from  '../state/userReducer/reducer'
 import { updateUser } from  '../state/userReducer/actions'
 import * as topLevelNav from '../state/topLevelNavigationReducer/actions'
-import * as apiClient from '../services/apiClient'
+import apiClient from '../services/apiClient'
 
 export function* runFetchUser(action) {
-  if (yield select(selectUserReducer)) return;
+  let existingUser = yield select(selectUserReducer)
+  if (existingUser.deviceId) return;
 
-  yield put(topLevelNav.showLoader)
-  newUser = yield call(apiClient.fetchUser)
+  const client = new apiClient
+  yield put(topLevelNav.showLoader())
+  newUser = yield call(client.fetchUser)
   yield put(updateUser(newUser))
-  yield put(topLevelNav.hideLoader)
+  yield put(topLevelNav.hideLoader())
 }
 
 export default function* fetchUser() {
