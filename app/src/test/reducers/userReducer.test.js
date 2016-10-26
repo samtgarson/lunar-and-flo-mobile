@@ -1,6 +1,6 @@
 import reducer from '../../state/userReducer/reducer';
 import * as actions from '../../state/userReducer/actions';
-import { UPDATE_USER } from '../../state/action-types'
+import { UPDATE_USER } from '../../state/constants'
 
 describe('userReducer reducer', () => {
   it('returns default state', () => {

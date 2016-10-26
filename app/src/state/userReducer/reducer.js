@@ -1,4 +1,5 @@
-import { UPDATE_USER } from '../action-types';
+import { createSelector } from 'reselect';
+import { UPDATE_USER } from '../constants';
 
 function userReducer(state = {}, action) {
   switch (action.type) {
@@ -17,6 +18,7 @@ function userReducer(state = {}, action) {
 
 export default userReducer;
 
-export function selectUserReducer(state) {
-  return state.get('userReducer');
-}
+export const userState = createSelector(
+  (state) => state.get('userReducer'), 
+  (userReducer) => ({ ...userReducer })
+)

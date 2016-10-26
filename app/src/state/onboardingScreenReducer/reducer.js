@@ -1,4 +1,4 @@
-import { DEFAULT_ACTION } from '../action-types';
+import { DEFAULT_ACTION } from '../constants';
 
 function onboardingScreenReducer(state = {}, action) {
   switch (action.type) {

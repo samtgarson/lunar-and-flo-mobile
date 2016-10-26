@@ -1,26 +1,16 @@
 import ReactNative from 'react-native';
-const { AdSupportIOS } = ReactNative;
 
 const ENDPOINT = 'http://private-1adab-lunarandflo.apiary-mock.com';
 
 export default class ApiClient {
-  constructor() {
-    this.deviceId = new Promise(this._setDeviceId)
-  }
-
   fetchUser () {
-    return this.deviceId.then((deviceId) => {
-      _post('/users', { 
-        body: JSON.stringify({device_id: deviceId})
-      })
-      return {
-        device_id: deviceId,
-        onboarded_at: null
-      }
-    })
+    return {
+      id: 1,
+      onboarded_at: null
+    }
   }
 
-  _get(url, opts) {
+  _get (url, opts) {
     const getOpts = {
       ...opts,
       method: 'GET'
@@ -28,7 +18,7 @@ export default class ApiClient {
     _call(url, getOpts)
   }
 
-  _post() {
+  _post () {
     const postOpts = {
       ...opts,
       method: 'POST'
@@ -36,13 +26,7 @@ export default class ApiClient {
     _call(url, postOpts)
   }
 
-  _call(url, opts) {
+  _call (url, opts) {
     fetch(ENPOINT + url, opts)
-  }
-
-  _setDeviceId(resolve, reject) {
-    AdSupportIOS.getAdvertisingId(
-      resolve, reject
-    )
   }
 }

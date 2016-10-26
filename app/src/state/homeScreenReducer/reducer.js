@@ -1,16 +1,31 @@
-import { DEFAULT_ACTION } from '../action-types';
+import { createSelector } from 'reselect';
+import { 
+  SHOW_HOME_SCREEN_LOADER,
+  HIDE_HOME_SCREEN_LOADER
+} from '../constants';
 
-function homeScreenReducer(state = {}, action) {
+const initialState = {
+  showLoader: false
+}
+
+export default function homeScreenReducer(state = initialState, action) {
   switch (action.type) {
-    case DEFAULT_ACTION:
-      return state;
+    case SHOW_HOME_SCREEN_LOADER:
+      return {
+        ...state,
+        showLoader: true
+      };
+    case HIDE_HOME_SCREEN_LOADER:
+      return {
+        ...state,
+        showLoader: false
+      };
     default:
       return state;
   }
 }
 
-export default homeScreenReducer;
-
-export function selectHomeScreenReducer(state) {
-  return state.get('homeScreenReducer');
-}
+export const homeScreenState = createSelector(
+  (state) => state.get('homeScreenReducer'), 
+  (HomeScreenReducer) => ({ ...HomeScreenReducer })
+)

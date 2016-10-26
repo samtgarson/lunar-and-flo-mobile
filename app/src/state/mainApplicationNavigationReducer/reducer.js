@@ -1,4 +1,5 @@
 import { tabReducer } from 'react-native-navigation-redux-helpers';
+import { MAIN_APPLICATION_NAVIGATION_KEY } from '../constants'
 
 const simpleIcon = {
   // eslint-disable-next-line max-len
@@ -10,7 +11,7 @@ const tabsDefinitions = {
   routes: [
     { key: 'homeScreen', icon: simpleIcon, title: 'Home' }
   ],
-  key: 'mainApplicationNavigation',
+  key: MAIN_APPLICATION_NAVIGATION_KEY,
   index: 0
 };
 

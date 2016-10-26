@@ -1,8 +1,8 @@
 import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createSelector } from 'reselect';
-import { selectTopLevelNavigationReducer } from '../../state/topLevelNavigationReducer/reducer';
+import { topLevelNavigationState } from '../../state/topLevelNavigationReducer/reducer';
+import { userState } from '../../state/userReducer/reducer';
 import { fetchUser } from '../../state/topLevelNavigationReducer/actions';
 import styles from './styles';
 import MainApplicationNavigation from '../MainApplicationNavigation';
@@ -25,7 +25,10 @@ export class TopLevelNavigation extends Component {
   }
 
   componentDidMount () {
-    this.props.dispatch(fetchUser())
+    const { dispatch, user } = this.props
+    
+    dispatch(fetchUser())
+    if (user.id && !user.onboardedAt) distatch(poshRoute('onboarding'))
   }
 
   renderScene(props) {
@@ -40,7 +43,7 @@ export class TopLevelNavigation extends Component {
       <NavigationCardStack
         direction={'vertical'}
         style={styles.main}
-        navigationState={this.props.TopLevelNavigationReducer}
+        navigationState={this.props.topLevelNavigationState}
         renderScene={this.renderScene}
         onNavigate={() => {}}
       />
@@ -50,7 +53,7 @@ export class TopLevelNavigation extends Component {
 
 
 TopLevelNavigation.propTypes = {
-  TopLevelNavigationReducer: React.PropTypes.object.isRequired,
+  topLevelNavigationState: React.PropTypes.object.isRequired,
   dispatch: React.PropTypes.func.isRequired,
 };
 
@@ -60,7 +63,14 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
+function mapStateToProps(state) {
+  return {
+    topLevelNavigationState: topLevelNavigationState(state),
+    user: userState(state)
+  };
+}
+
 export default connect(
-  createSelector(selectTopLevelNavigationReducer, (TopLevelNavigationReducer) => ({ TopLevelNavigationReducer })),
+  mapStateToProps,
   mapDispatchToProps
 )(TopLevelNavigation);

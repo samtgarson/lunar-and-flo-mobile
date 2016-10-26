@@ -1,6 +1,6 @@
 import {
   UPDATE_USER
-} from '../action-types';
+} from '../constants';
 
 export function updateUser(user) {
   return {

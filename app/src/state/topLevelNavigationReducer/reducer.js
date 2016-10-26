@@ -1,21 +1,21 @@
+import { createSelector } from 'reselect';
 import { cardStackReducer } from 'react-native-navigation-redux-helpers';
+import { TOP_LEVEL_NAVIGATION_KEY } from '../constants'
 
 const initialState = {
-  key: 'topLevelNavigationReducer',
+  key: TOP_LEVEL_NAVIGATION_KEY,
   index: 0,
   routes: [
     {
       key: 'mainApplication',
       index: 0,
     },
-  ],
+  ]
 };
 
-const topLevelNavigationReducer = cardStackReducer(initialState);
+export default cardStackReducer(initialState);;
 
-export default topLevelNavigationReducer;
-
-
-export function selectTopLevelNavigationReducer(state) {
-  return state.get('topLevelNavigationReducer');
-}
+export const topLevelNavigationState = createSelector(
+  (state) => state.get('topLevelNavigationReducer'), 
+  (topLevelNavigationReducer) => ({ ...topLevelNavigationReducer })
+)
