@@ -2856,7 +2856,7 @@ module-deps@^3.9.1:
     through2 "^1.0.0"
     xtend "^4.0.0"
 
-moment@2.x.x:
+moment, moment@2.x.x:
   version "2.15.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.15.2.tgz#1bfdedf6a6e345f322fe956d5df5bd08a8ce84dc"
 
@@ -3321,6 +3321,10 @@ react-dom@^15.2.1:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.3.2.tgz#c46b0aa5380d7b838e7a59c4a7beff2ed315531f"
 
+react-native-form-generator:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/react-native-form-generator/-/react-native-form-generator-0.9.9.tgz#68aae26d1e8dc3e30073ccd7bb298fbdfdce1bca"
+
 react-native-mock@^0.2.4:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/react-native-mock/-/react-native-mock-0.2.7.tgz#683880c400099a1c41bbd309ec5b92b3019d6034"
@@ -3337,6 +3341,10 @@ react-native-mock@^0.2.4:
     react-addons-update "=15.1.0"
     react-timer-mixin "=0.13.3"
     warning "=2.1.0"
+
+react-native-multistep-wizard:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-multistep-wizard/-/react-native-multistep-wizard-0.0.1.tgz#a691845bc0c42dcba09bd1759d2b057340fed526"
 
 react-native-navigation-redux-helpers@^0.4.1:
   version "0.4.1"

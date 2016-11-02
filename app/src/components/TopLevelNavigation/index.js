@@ -6,7 +6,7 @@ import { userState } from '../../state/userReducer/reducer';
 import { fetchUser } from '../../state/topLevelNavigationReducer/actions';
 import styles from './styles';
 import MainApplicationNavigation from '../MainApplicationNavigation';
-import OnboardingScreen from '../OnboardingScreen';
+import OnboardingForm from '../OnboardingForm';
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
 
 const {
@@ -34,7 +34,7 @@ export class TopLevelNavigation extends Component {
   renderScene(props) {
     return {
       mainApplication: <MainApplicationNavigation />,
-      onboarding: <OnboardingScreen />
+      onboarding: <OnboardingForm />
     }[props.scene.route.key]
   }
 
