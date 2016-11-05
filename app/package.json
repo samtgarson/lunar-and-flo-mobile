@@ -8,10 +8,12 @@
     "node": ">=4.3"
   },
   "dependencies": {
+    "change-case-keys": "^0.0.4",
     "immutable": "^3.8.1",
     "moment": "^2.15.2",
     "react": "15.3.2",
     "react-native": "^0.34.0",
+    "react-native-awesome-button": "^1.6.0",
     "react-native-form-generator": "^0.9.9",
     "react-native-multistep-wizard": "^0.0.1",
     "react-native-navigation-redux-helpers": "^0.4.1",

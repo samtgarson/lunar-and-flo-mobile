@@ -25,10 +25,7 @@ export class TopLevelNavigation extends Component {
   }
 
   componentDidMount () {
-    const { dispatch, user } = this.props
-    
-    dispatch(fetchUser())
-    if (user.id && !user.onboardedAt) distatch(poshRoute('onboarding'))
+    this.props.fetchUser()
   }
 
   renderScene(props) {
@@ -54,16 +51,10 @@ export class TopLevelNavigation extends Component {
 
 TopLevelNavigation.propTypes = {
   topLevelNavigationState: React.PropTypes.object.isRequired,
-  dispatch: React.PropTypes.func.isRequired,
+  fetchUser: React.PropTypes.func.isRequired,
 };
 
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch
-  };
-}
-
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   return {
     topLevelNavigationState: topLevelNavigationState(state),
     user: userState(state)
@@ -72,5 +63,5 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  { fetchUser }
 )(TopLevelNavigation);

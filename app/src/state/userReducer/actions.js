@@ -5,8 +5,6 @@ import {
 export function updateUser(user) {
   return {
     type: UPDATE_USER,
-    payload: {
-      ...user
-    }
+    payload: user
   };
 }

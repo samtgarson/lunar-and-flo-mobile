@@ -17,9 +17,6 @@ export class MainApplicationNavigation extends Component {
     this.renderTabContent = this.renderTabContent.bind(this);
   }
 
-  // XX: get rid of this eslint-disable thingy once you set up
-  // proper rendering for your tabs
-  // eslint-disable-next-line no-unused-vars
   renderTabContent(tab) {
     return {
       homeScreen: <HomeScreen />,

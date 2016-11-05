@@ -2,7 +2,10 @@ import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import stepOne from './step-one'
+import stepTwo from './step-two'
+import stepThree from './step-three'
 import MultiStep from 'react-native-multistep-wizard'
+import { onboardUser } from '../../state/onboardingFormReducer/actions';
 
 import { createSelector } from 'reselect';
 import { onboardingFormState } from '../../state/onboardingFormReducer/reducer';
@@ -10,16 +13,17 @@ import styles from './styles';
 
 const { View, Text } = ReactNative;
 
-const steps = [stepOne]
+const steps = [stepOne, stepTwo, stepThree]
 
 export class OnboardingForm extends Component {
   finish (formState) {
-    console.log(formState)
+    const data = formState.reduce((d, step) => Object.assign({}, d, step), {})
+    this.props.completeOnboarding(data)
   }
   render () {
     return (
       <View style={styles.container}>
-        <MultiStep steps={steps} onFinish={this.finish}/>
+        <MultiStep steps={steps} onFinish={this.finish.bind(this)}/>
       </View>
     );
   }
@@ -27,16 +31,10 @@ export class OnboardingForm extends Component {
 
 OnboardingForm.propTypes = {
   onboardingFormState: React.PropTypes.object.isRequired,
-  dispatch: React.PropTypes.func.isRequired,
+  completeOnboarding: React.PropTypes.func.isRequired,
 };
 
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   return {
     onboardingFormState: onboardingFormState(state)
   };
@@ -44,5 +42,5 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  { completeOnboarding: onboardUser }
 )(OnboardingForm);
