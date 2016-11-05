@@ -2,10 +2,10 @@ import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
-import { selectMainApplicationNavigationReducer } from '../../state/mainApplicationNavigationReducer/reducer';
+import { selectMainApplicationNavigationReducer } from '../../state/main-application-navigation/reducer';
 import styles from './styles';
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
-import HomeScreen from '../HomeScreen';
+import HomeScreen from '../home-screen';
 
 const { View, TabBarIOS } = ReactNative;
 const { jumpTo } = navigationActions;

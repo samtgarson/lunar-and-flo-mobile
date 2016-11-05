@@ -1,7 +1,7 @@
 import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { homeScreenState } from '../../state/homeScreenReducer/reducer';
+import { homeScreenState } from '../../state/home-screen/reducer';
 import styles from './styles';
 
 const { View, Text } = ReactNative;

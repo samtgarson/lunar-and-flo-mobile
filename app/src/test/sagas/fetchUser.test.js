@@ -1,11 +1,11 @@
 import { runFetchUser } from '../../sagas/fetchUser'
-import { userState } from  '../../state/userReducer/reducer'
+import { userState } from  '../../state/user/reducer'
 import { select, put } from 'redux-saga/effects';
-import { showLoader, hideLoader } from '../../state/topLevelNavigationReducer/actions'
-import { updateUser } from  '../../state/userReducer/actions'
+import { showLoader, hideLoader } from '../../state/top-level-navigation/actions'
+import { updateUser } from  '../../state/user/actions'
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
 import { TOP_LEVEL_NAVIGATION_KEY } from '../../state/constants'
-import apiClient from '../../services/apiClient'
+import apiClient from '../../services/api-client'
 import sinon from 'sinon'
 import testSaga from 'redux-saga-test-plan';
 

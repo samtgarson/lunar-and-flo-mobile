@@ -5,10 +5,10 @@ import stepOne from './step-one'
 import stepTwo from './step-two'
 import stepThree from './step-three'
 import MultiStep from 'react-native-multistep-wizard'
-import { onboardUser } from '../../state/onboardingFormReducer/actions';
+import { onboardUser } from '../../state/onboarding-form/actions';
 
 import { createSelector } from 'reselect';
-import { onboardingFormState } from '../../state/onboardingFormReducer/reducer';
+import { onboardingFormState } from '../../state/onboarding-form/reducer';
 import styles from './styles';
 
 const { View, Text } = ReactNative;

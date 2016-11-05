@@ -1,12 +1,12 @@
 import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { topLevelNavigationState } from '../../state/topLevelNavigationReducer/reducer';
-import { userState } from '../../state/userReducer/reducer';
-import { fetchUser } from '../../state/topLevelNavigationReducer/actions';
+import { topLevelNavigationState } from '../../state/top-level-navigation/reducer';
+import { userState } from '../../state/user/reducer';
+import { fetchUser } from '../../state/top-level-navigation/actions';
 import styles from './styles';
-import MainApplicationNavigation from '../MainApplicationNavigation';
-import OnboardingForm from '../OnboardingForm';
+import MainApplicationNavigation from '../main-application-navigation';
+import OnboardingForm from '../onboarding-form';
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
 
 const {
@@ -20,8 +20,6 @@ const { CardStack: NavigationCardStack } = NavigationExperimental;
 export class TopLevelNavigation extends Component {
   constructor(props) {
     super(props);
-
-    this.renderScene = this.renderScene.bind(this);
   }
 
   componentDidMount () {
@@ -41,7 +39,7 @@ export class TopLevelNavigation extends Component {
         direction={'vertical'}
         style={styles.main}
         navigationState={this.props.topLevelNavigationState}
-        renderScene={this.renderScene}
+        renderScene={this.renderScene.bind(this)}
         onNavigate={() => {}}
       />
     );

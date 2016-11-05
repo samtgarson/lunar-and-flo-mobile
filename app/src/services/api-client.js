@@ -1,4 +1,5 @@
 import ReactNative from 'react-native';
+import packFixture from '../test/fixtures/pack.json'
 
 const ENDPOINT = 'http://private-1adab-lunarandflo.apiary-mock.com';
 
@@ -8,6 +9,9 @@ export default class ApiClient {
       id: 1,
       onboarded_at: null
     }
+  }
+  onboardUser () {
+    return packFixture
   }
 
   _get (url, opts) {

@@ -2,15 +2,14 @@ import { takeEvery } from 'redux-saga';
 import { put, select, call } from 'redux-saga/effects';
 
 import { FETCH_USER } from '../state/constants'
-import { userState } from  '../state/userReducer/reducer'
-import { updateUser } from  '../state/userReducer/actions'
-import * as homeScreen from '../state/homeScreenReducer/actions'
-import ApiClient from '../services/apiClient'
+import { userState } from  '../state/user/reducer'
+import { updateUser } from  '../state/user/actions'
+import * as homeScreen from '../state/home-screen/actions'
+import ApiClient from '../services/api-client'
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
 import { TOP_LEVEL_NAVIGATION_KEY } from '../state/constants'
 
 const {
-  popRoute,
   pushRoute
 } = navigationActions;
 

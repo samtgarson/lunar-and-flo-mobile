@@ -2,7 +2,7 @@ import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import styles from './styles';
 
-import TopLevelNavigation from '../TopLevelNavigation';
+import TopLevelNavigation from '../top-level-navigation';
 
 const { View, Text } = ReactNative;
 
