@@ -1,5 +1,5 @@
 import { runFetchUser } from '../../sagas/fetchUser'
-import { userState } from  '../../state/user/reducer'
+import userState from  '../../state/user/selector'
 import { select, put } from 'redux-saga/effects';
 import { showLoader, hideLoader } from '../../state/top-level-navigation/actions'
 import { updateUser } from  '../../state/user/actions'

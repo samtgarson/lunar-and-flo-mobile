@@ -1,4 +1,3 @@
-import { createSelector } from 'reselect';
 import { UPDATE_USER } from '../constants';
 
 function userReducer(state = {}, action) {
@@ -18,7 +17,3 @@ function userReducer(state = {}, action) {
 
 export default userReducer;
 
-export const userState = createSelector(
-  (state) => state.get('userReducer'), 
-  (userReducer) => ({ ...userReducer })
-)
