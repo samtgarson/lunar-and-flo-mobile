@@ -8,7 +8,6 @@ import MultiStep from 'react-native-multistep-wizard'
 import { onboardUser } from '../../state/onboarding-form/actions';
 
 import { createSelector } from 'reselect';
-import { onboardingFormState } from '../../state/onboarding-form/reducer';
 import styles from './styles';
 
 const { View, Text } = ReactNative;
@@ -30,17 +29,10 @@ export class OnboardingForm extends Component {
 }
 
 OnboardingForm.propTypes = {
-  onboardingFormState: React.PropTypes.object.isRequired,
   completeOnboarding: React.PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state) => {
-  return {
-    onboardingFormState: onboardingFormState(state)
-  };
-}
-
 export default connect(
-  mapStateToProps,
+  () => {return {}},
   { completeOnboarding: onboardUser }
 )(OnboardingForm);

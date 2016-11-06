@@ -15,10 +15,4 @@ const tabsDefinitions = {
   index: 0
 };
 
-const mainApplicationNavigationReducer = tabReducer(tabsDefinitions);
-
-export default mainApplicationNavigationReducer;
-
-export function selectMainApplicationNavigationReducer(state) {
-  return state.get('mainApplicationNavigationReducer');
-}
+export default tabReducer(tabsDefinitions);

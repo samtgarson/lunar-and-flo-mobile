@@ -1,4 +1,3 @@
-import { createSelector } from 'reselect';
 import { 
   SHOW_HOME_SCREEN_LOADER,
   HIDE_HOME_SCREEN_LOADER
@@ -24,8 +23,3 @@ export default function homeScreenReducer(state = initialState, action) {
       return state;
   }
 }
-
-export const homeScreenState = createSelector(
-  (state) => state.get('homeScreenReducer'), 
-  (HomeScreenReducer) => ({ ...HomeScreenReducer })
-)

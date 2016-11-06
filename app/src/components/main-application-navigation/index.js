@@ -2,7 +2,7 @@ import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
-import { selectMainApplicationNavigationReducer } from '../../state/main-application-navigation/reducer';
+import mainApplicationNavigationState from '../../state/main-application-navigation/selector';
 import styles from './styles';
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
 import HomeScreen from '../home-screen';
@@ -54,13 +54,19 @@ MainApplicationNavigation.propTypes = {
   dispatch: React.PropTypes.func.isRequired,
 };
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = (dispatch) => {
   return {
     dispatch,
   };
 }
 
+const mapStateToProps = (state) => { 
+  return {
+    MainApplicationNavigationReducer: mainApplicationNavigationState(state) 
+  }
+}
+
 export default connect(
-  createSelector(selectMainApplicationNavigationReducer, (MainApplicationNavigationReducer) => ({ MainApplicationNavigationReducer })),
+  mapStateToProps,
   mapDispatchToProps
 )(MainApplicationNavigation);

@@ -1,7 +1,7 @@
 import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { topLevelNavigationState } from '../../state/top-level-navigation/reducer';
+import topLevelNavigationState from '../../state/top-level-navigation/selector';
 import { userState } from '../../state/user/reducer';
 import { fetchUser } from '../../state/top-level-navigation/actions';
 import styles from './styles';
