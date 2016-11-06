@@ -13,17 +13,19 @@ const {
   pushRoute
 } = navigationActions;
 
-export function* runFetchUser(action) {
-  let existingUser = yield select(userState)
-  if (existingUser.id) return;
-
+function* fetchNewUser() {
   const client = new ApiClient()
   yield put(homeScreen.showLoader())
   newUser = yield call([client, client.fetchUser])
   yield put(updateUser(newUser))
   yield put(homeScreen.hideLoader())
+  return newUser
+}
 
-  yield put(pushRoute({ key: 'onboarding' }, TOP_LEVEL_NAVIGATION_KEY))
+export function* runFetchUser(action) {
+  let user = yield select(userState)
+  if (!user.id) user = yield fetchNewUser()
+  if (!user.onboardedAt) yield put(pushRoute({ key: 'onboarding' }, TOP_LEVEL_NAVIGATION_KEY))
 }
 
 export default function* fetchUser() {

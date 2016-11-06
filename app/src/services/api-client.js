@@ -1,14 +1,16 @@
 import ReactNative from 'react-native';
 import packFixture from '../test/fixtures/pack.json'
+import changeCase from 'change-case-keys'
 
 const ENDPOINT = 'http://private-1adab-lunarandflo.apiary-mock.com';
 
 export default class ApiClient {
   fetchUser () {
-    return {
+    const response = {
       id: 1,
       onboarded_at: null
     }
+    return changeCase(response, 'camelize')
   }
   onboardUser () {
     return packFixture
