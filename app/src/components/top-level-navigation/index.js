@@ -2,8 +2,8 @@ import ReactNative from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import topLevelNavigationState from '../../state/top-level-navigation/selector';
-import { fetchUser } from '../../state/top-level-navigation/actions';
 import userState from '../../state/user/selector';
+import { initializeApp } from '../../state/top-level-navigation/actions';
 import styles from './styles';
 import MainApplicationNavigation from '../main-application-navigation';
 import OnboardingForm from '../onboarding-form';
@@ -23,7 +23,7 @@ export class TopLevelNavigation extends Component {
   }
 
   componentDidMount () {
-    this.props.fetchUser()
+    this.props.initializeApp()
   }
 
   renderScene(props) {
@@ -49,7 +49,7 @@ export class TopLevelNavigation extends Component {
 
 TopLevelNavigation.propTypes = {
   topLevelNavigationState: React.PropTypes.object.isRequired,
-  fetchUser: React.PropTypes.func.isRequired,
+  initializeApp: React.PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => {
@@ -61,5 +61,5 @@ const mapStateToProps = (state) => {
 
 export default connect(
   mapStateToProps,
-  { fetchUser }
+  { initializeApp }
 )(TopLevelNavigation);

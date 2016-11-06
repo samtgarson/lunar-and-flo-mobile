@@ -12,8 +12,8 @@ export default class ApiClient {
     }
     return changeCase(response, 'camelize')
   }
-  onboardUser () {
-    return packFixture
+  onboardUser (data) {
+    return changeCase(packFixture, 'camelize')
   }
 
   _get (url, opts) {

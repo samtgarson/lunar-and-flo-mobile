@@ -1,3 +1,3 @@
 /* eslint eol-last:"off", comma-dangle:"off" */
-import fetchUser from './fetchUser';
-export default sagas = [fetchUser];
+import initializeApp from './initialize-app';
+export default sagas = [initializeApp];

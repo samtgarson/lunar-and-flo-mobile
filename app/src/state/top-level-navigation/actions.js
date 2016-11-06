@@ -1,9 +1,9 @@
 import {
-  FETCH_USER
+  INITIALIZE_APP
 } from '../constants';
 
-export function fetchUser() {
+export function initializeApp() {
   return {
-    type: FETCH_USER
+    type: INITIALIZE_APP
   };
 }

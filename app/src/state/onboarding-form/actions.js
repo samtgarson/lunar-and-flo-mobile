@@ -1,10 +1,10 @@
 import {
-  ONBOARD_USER
+  ONBOARD_FORM_COMPLETE
 } from '../constants';
 
-export function onboardUser(data) {
+export function completeOnboardForm(data) {
   return {
-    type: ONBOARD_USER,
+    type: ONBOARD_FORM_COMPLETE,
     payload: data
   };
 }

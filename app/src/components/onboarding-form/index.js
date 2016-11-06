@@ -5,7 +5,7 @@ import stepOne from './step-one'
 import stepTwo from './step-two'
 import stepThree from './step-three'
 import MultiStep from 'react-native-multistep-wizard'
-import { onboardUser } from '../../state/onboarding-form/actions';
+import { completeOnboardForm } from '../../state/onboarding-form/actions';
 
 import { createSelector } from 'reselect';
 import styles from './styles';
@@ -34,5 +34,5 @@ OnboardingForm.propTypes = {
 
 export default connect(
   () => {return {}},
-  { completeOnboarding: onboardUser }
+  { completeOnboarding: completeOnboardForm }
 )(OnboardingForm);

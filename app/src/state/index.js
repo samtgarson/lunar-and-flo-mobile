@@ -10,7 +10,7 @@ const settings = Settings.load();
 
 const sagaMiddleware = createSagaMiddleware();
 
-function configureStore(initialState = fromJS({})) {
+export default function configureStore(initialState = fromJS({})) {
   const enhancers = [
     applyMiddleware(sagaMiddleware),
   ];
@@ -25,5 +25,3 @@ function configureStore(initialState = fromJS({})) {
 
   return store;
 }
-
-module.exports = configureStore;
