@@ -1,0 +1,158 @@
+[
+  {
+    "id": "c91de8c8-0806-48fd-8d05-904336c89c7b",
+    "effectiveness_days": 35,
+    "supplement_id": "ffeea8c7-edef-4a14-8692-8bd70baebaee",
+    "symptom_id": "135930a6-901a-4b03-a19a-04ee6987ee98"
+  },
+  {
+    "id": "8c16b4c8-f46a-40ed-8466-44c282b476c4",
+    "effectiveness_days": 38,
+    "supplement_id": "0faf0c45-0bcd-4e92-8457-81cf741ac55d",
+    "symptom_id": "a643ce1f-9b86-4e32-bdc7-fb171ddfaf51"
+  },
+  {
+    "id": "eaca88e2-8a7e-4a93-88e8-cbc2093d60bf",
+    "effectiveness_days": 45,
+    "supplement_id": "34c43754-d4ab-4292-9c9b-df18a2b97d06",
+    "symptom_id": "9ec5da14-c0ed-4159-9e0d-0c431703327f"
+  },
+  {
+    "id": "a45e7d11-9d58-4fe0-9323-a69a7b5fe471",
+    "effectiveness_days": 54,
+    "supplement_id": "0b01c4c0-081c-42d5-b145-3a0051ac382c",
+    "symptom_id": "2bef1e28-fa46-4468-873e-69aff63e6d60"
+  },
+  {
+    "id": "3d943447-5e7d-45fe-8019-1a13e209dfca",
+    "effectiveness_days": 37,
+    "supplement_id": "1f086380-3569-4c92-be1d-0546a665e6a7",
+    "symptom_id": "69265c5b-b003-4995-8866-1ca318ad742b"
+  },
+  {
+    "id": "655baba6-37e8-4c09-92a4-34c723a50852",
+    "effectiveness_days": 7,
+    "supplement_id": "294da5cb-7ad5-48c0-8c23-76497000b1e3",
+    "symptom_id": "e5f0cdc4-eec0-40fa-94c3-be659af9ef7b"
+  },
+  {
+    "id": "ccce02f8-a966-446f-b782-df8dda4b5fe3",
+    "effectiveness_days": 45,
+    "supplement_id": "179a3d70-8744-42e6-b08b-edfe65c4bf70",
+    "symptom_id": "4f0591f7-a447-431a-9709-349164caa834"
+  },
+  {
+    "id": "8ff3a085-0f25-4f95-b1fa-8182aff3b765",
+    "effectiveness_days": 4,
+    "supplement_id": "819526d7-921c-4b90-a43f-2ed092dd44b8",
+    "symptom_id": "5720f6f0-84e0-46f6-9ad5-a4e195044aa4"
+  },
+  {
+    "id": "4e62bc14-0171-4b95-a8fb-e4ac7d75c270",
+    "effectiveness_days": 37,
+    "supplement_id": "d8315375-4147-4024-943d-e33601e2d3a3",
+    "symptom_id": "a4691de3-caf4-4fc2-b5ba-175a483de534"
+  },
+  {
+    "id": "a782fa93-372e-41c6-aa08-dc8d4a2cb39e",
+    "effectiveness_days": 44,
+    "supplement_id": "39d198f7-7802-4a70-803a-06c921ad9f7d",
+    "symptom_id": "24b75627-8b6e-44ac-88b5-cb00d25cd1fa"
+  },
+  {
+    "id": "f16391c4-eaf2-49d1-8aef-5ba41afdb5bd",
+    "effectiveness_days": 10,
+    "supplement_id": "0d51877e-76dd-4b0a-bdda-dd6f87592f13",
+    "symptom_id": "3d425250-6cf4-4570-a467-044d499779ba"
+  },
+  {
+    "id": "73e5eec5-73e0-47e3-a2e6-b5905f949f8e",
+    "effectiveness_days": 5,
+    "supplement_id": "38a04a2b-249a-4edd-9fd1-0f36c71b5087",
+    "symptom_id": "6d75240e-30b1-4274-9ddd-b35f36f3b369"
+  },
+  {
+    "id": "48b1bbbd-beff-4cc1-97c3-a77901fcaa3f",
+    "effectiveness_days": 15,
+    "supplement_id": "64fb0402-8df3-4cef-9a1e-3e404d5aed13",
+    "symptom_id": "dcd0b896-3bbd-48b0-b620-42d98c13faa2"
+  },
+  {
+    "id": "6f70b6f0-606b-4331-8d51-fe94509ec5ea",
+    "effectiveness_days": 21,
+    "supplement_id": "0d693f90-600c-4995-9ba6-34862ecc0fe2",
+    "symptom_id": "cb9aa3be-3c28-455d-a46d-149ab6a5cf3d"
+  },
+  {
+    "id": "0bc8604b-830a-48f7-ac12-93564af165fe",
+    "effectiveness_days": 8,
+    "supplement_id": "43c23e8b-f9f3-4f66-aa0c-489b960f591c",
+    "symptom_id": "972dce17-d949-4c2b-84c5-2ee8bb88fada"
+  },
+  {
+    "id": "c9838a41-a886-4155-a6f0-1c129d38075d",
+    "effectiveness_days": 44,
+    "supplement_id": "3ffb81e8-fb2f-49ca-b8b8-b5d1f862de09",
+    "symptom_id": "3d7fd262-2ea2-4039-9283-97b27172c055"
+  },
+  {
+    "id": "c4c4094f-4263-4957-ae37-3710ad2a023f",
+    "effectiveness_days": 7,
+    "supplement_id": "d5aacb24-bcd9-4e09-8185-fa92eae62018",
+    "symptom_id": "87df5ae4-bb7e-4bb2-b883-a65ce780c406"
+  },
+  {
+    "id": "a8d47254-2b37-47e5-beec-6ad0c12b2471",
+    "effectiveness_days": 29,
+    "supplement_id": "8dfa9167-2afa-406b-b8c1-bffc9fb23e03",
+    "symptom_id": "f781ca7f-c647-4654-8d92-ffc4b07ddd9d"
+  },
+  {
+    "id": "466a333e-0dca-422d-bfdf-6bc13cd30a73",
+    "effectiveness_days": 5,
+    "supplement_id": "53ebd824-1556-4d0b-ab45-61fca639135c",
+    "symptom_id": "fc7f2ac3-da33-40aa-bee7-c424e028f3fe"
+  },
+  {
+    "id": "91f2e332-c8f2-45a7-b6d9-4f0df601a5dc",
+    "effectiveness_days": 42,
+    "supplement_id": "eee50b18-5217-47ea-8415-614af37b44ce",
+    "symptom_id": "c8dee0c7-0403-4a1b-b96f-ff386b4e65a2"
+  },
+  {
+    "id": "28a1608e-6833-46be-b728-0a4c784e1c1d",
+    "effectiveness_days": 46,
+    "supplement_id": "752f7298-48af-46f0-acd8-3f6f6d00de1f",
+    "symptom_id": "5952a414-2405-4b5c-9c9a-61718560cf4c"
+  },
+  {
+    "id": "71367af7-1768-4666-a67a-4c3c017a919a",
+    "effectiveness_days": 20,
+    "supplement_id": "37483fef-634b-4b17-9b8d-6ce9ae14e1aa",
+    "symptom_id": "ec74f828-f855-48db-add2-1f40e730c2ff"
+  },
+  {
+    "id": "158cd3ce-2387-48c4-b3ce-c98844edbb13",
+    "effectiveness_days": 2,
+    "supplement_id": "856ae1ce-b703-4357-86ce-d2faafd9cba3",
+    "symptom_id": "ed13d4fd-93ef-44ab-aadb-ec22dd886c4e"
+  },
+  {
+    "id": "10c38dcd-e81d-43de-890f-0cf249aa2335",
+    "effectiveness_days": 51,
+    "supplement_id": "ca13baa6-613d-48c2-b9a9-300a71976ef4",
+    "symptom_id": "d667e600-7cef-4947-a28a-e29eb8e8a1fe"
+  },
+  {
+    "id": "20e902ea-957d-45b5-98df-112cb23536d9",
+    "effectiveness_days": 56,
+    "supplement_id": "dd965e54-9efb-44af-90f4-630a1db17046",
+    "symptom_id": "9bf710c0-36b0-410a-b3dc-804c98efbae2"
+  },
+  {
+    "id": "c33059d0-8e37-40ee-a207-8802fd7655f7",
+    "effectiveness_days": 2,
+    "supplement_id": "4d607da0-e569-4b55-8d42-5d854c7cd72d",
+    "symptom_id": "d5f22bcf-f357-49bc-9ea8-a085e1016542"
+  }
+]

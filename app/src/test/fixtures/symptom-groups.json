@@ -1,0 +1,38 @@
+[
+  {
+    "id": "f2219e77-9275-41e4-8198-7681e57fb30d",
+    "name": "SDD",
+    "created_at": "2016-10-01T12:04:43.915Z",
+    "updated_at": "2016-10-01T12:04:43.915Z",
+    "category": "physical",
+    "points": 1,
+    "icon": "happy"
+  },
+  {
+    "id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468",
+    "name": "EXE",
+    "created_at": "2016-10-01T12:04:55.358Z",
+    "updated_at": "2016-10-01T12:04:55.358Z",
+    "category": "mood",
+    "points": -1,
+    "icon": "sad"
+  },
+  {
+    "id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782",
+    "name": "HDD",
+    "created_at": "2016-10-01T12:06:05.202Z",
+    "updated_at": "2016-10-01T12:06:05.202Z",
+    "category": null,
+    "points": -1,
+    "icon": "caring"
+  },
+  {
+    "id": "fdd63fec-0500-45ce-8a84-b84d53723ac4",
+    "name": "SMTP",
+    "created_at": "2016-10-01T12:06:17.291Z",
+    "updated_at": "2016-10-01T12:06:17.291Z",
+    "category": "mood",
+    "points": 1,
+    "icon": "angry"
+  }
+]
