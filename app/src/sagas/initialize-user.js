@@ -26,6 +26,6 @@ function* runOnboarding (user) {
   yield put(pushRoute({ key: 'onboarding' }, TOP_LEVEL_NAVIGATION_KEY))
   const { payload: onboardingData } = yield take(ONBOARD_FORM_COMPLETE)
   const latestPack = yield call([client, client.onboardUser], onboardingData)
-  yield put(createPack(latestPack))
+  yield [put(createPack(latestPack)), put(updateUser({onboardedAt: new Date().toISOString()}))]
   yield put(popRoute(TOP_LEVEL_NAVIGATION_KEY))
 }

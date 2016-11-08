@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
 export default createSelector(
-  (state) => state.get('mainApplicationNavigationReducer'), 
+  (state) => state.mainApplicationNavigationReducer, 
   (MainApplicationNavigation) => ({ ...MainApplicationNavigation })
 )

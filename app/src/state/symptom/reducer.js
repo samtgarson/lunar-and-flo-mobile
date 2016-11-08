@@ -4,7 +4,7 @@ export default function reducer (state, action, Symptom, session) {
   const { type, payload } = action
   switch (type) {
   case CREATE_SYMPTOM:
-    Symptom.create({
+    Symptom.createOrUpdate({
       ...payload,
       symptomGroup: payload.symptomGroupId
     })

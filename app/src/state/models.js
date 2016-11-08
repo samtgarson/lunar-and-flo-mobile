@@ -1,18 +1,24 @@
-import {fk, many, Model, Schema} from 'redux-orm/dist/redux-orm.min';
+import {fk, many, Model, Schema} from '../vendor/redux-orm.min';
 import PackReducer from './pack/reducer'
 import SymptomReducer from './symptom/reducer'
 import SupplementReducer from './supplement/reducer'
 import EffectReducer from './effect/reducer'
 import SymptomGroupReducer from './symptom-group/reducer'
 
-class Pack extends Model {}
+class BaseModel extends Model {}
+BaseModel.createOrUpdate = function (attrs) {
+  if (this.hasId(attrs.id)) this.withId(attrs.id).update(attrs)
+  else this.create(attrs)
+}
+
+class Pack extends BaseModel {}
 Pack.modelName = 'Pack'
 Pack.reducer = PackReducer
 Pack.fields = {
   effects: many('Effect', 'packs')
 }
 
-class Effect extends Model {}
+class Effect extends BaseModel {}
 Effect.modelName = 'Effect'
 Effect.reducer = EffectReducer
 Effect.fields = {
@@ -20,18 +26,18 @@ Effect.fields = {
   symptom: fk('Symptom', 'effect')
 }
 
-class Supplement extends Model {}
+class Supplement extends BaseModel {}
 Supplement.modelName = 'Supplement'
 Supplement.reducer = SupplementReducer
 
-class Symptom extends Model {}
+class Symptom extends BaseModel {}
 Symptom.modelName = 'Symptom'
 Symptom.reducer = SymptomReducer
 Symptom.fields = {
   symptomGroup: fk('SymptomGroup', 'symptoms')
 }
 
-class SymptomGroup extends Model {}
+class SymptomGroup extends BaseModel {}
 SymptomGroup.modelName = 'SymptomGroup'
 SymptomGroup.reducer = SymptomGroupReducer
 

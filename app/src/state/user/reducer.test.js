@@ -2,7 +2,7 @@ import reducer from '../../state/user/reducer';
 import * as actions from '../../state/user/actions';
 import { UPDATE_USER } from '../../state/constants'
 
-describe('userReducer reducer', () => {
+describe('user reducer', () => {
   it('returns default state', () => {
     expect(
       reducer(undefined, {})

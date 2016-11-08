@@ -4,7 +4,7 @@ export default function reducer (state, action, Pack, session) {
   const { type, payload } = action
   switch (type) {
   case CREATE_PACK:
-    Pack.create({
+    Pack.createOrUpdate({
       ...payload,
       effects: payload.effectIds
     })

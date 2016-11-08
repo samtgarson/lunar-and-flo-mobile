@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
 export default createSelector(
-  (state) => state.get('homeScreenReducer'), 
+  (state) => state.homeScreenReducer, 
   (HomeScreenReducer) => ({ ...HomeScreenReducer })
 )

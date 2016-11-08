@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
 export default createSelector(
-  (state) => state.get('userReducer'), 
-  (userReducer) => ({ ...userReducer })
+  (state) => state.user, 
+  (user) => ({ ...user })
 )

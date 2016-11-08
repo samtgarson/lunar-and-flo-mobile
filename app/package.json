@@ -4,12 +4,14 @@
   "description": "React Native app powered by Baker",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
+  },
   "engines": {
     "node": ">=4.3"
   },
   "dependencies": {
     "change-case-keys": "^0.0.4",
-    "immutable": "^3.8.1",
     "moment": "^2.15.2",
     "react": "15.3.2",
     "react-native": "^0.34.0",
@@ -19,8 +21,7 @@
     "react-native-navigation-redux-helpers": "^0.4.1",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
-    "redux-immutable": "^3.0.6",
-    "redux-orm": "^0.8.4",
+    "redux-persist": "^4.0.0-alpha7",
     "redux-saga": "^0.11.1",
     "reselect": "^2.4.0"
   },
@@ -31,6 +32,7 @@
     "react-addons-test-utils": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-native-mock": "^0.2.4",
-    "remote-redux-devtools": "^0.4.9"
+    "remote-redux-devtools": "^0.4.9",
+    "remote-redux-devtools-on-debugger": "^0.6.3"
   }
 }
