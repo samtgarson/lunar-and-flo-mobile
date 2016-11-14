@@ -3463,7 +3463,7 @@ mongodb-runner@^3.4.0:
     untildify "~3.0.0"
     which "^1.2.4"
 
-"mongodb-tools@github:mongodb-js/mongodb-tools":
+mongodb-tools@mongodb-js/mongodb-tools:
   version "1.1.0"
   resolved "https://codeload.github.com/mongodb-js/mongodb-tools/tar.gz/3467b806e39f1ecb97d2233e8c1f348794672253"
   dependencies:

@@ -11,14 +11,14 @@ BaseModel.createOrUpdate = function (attrs) {
   else this.create(attrs)
 }
 
-class Pack extends BaseModel {}
+export class Pack extends BaseModel {}
 Pack.modelName = 'Pack'
 Pack.reducer = PackReducer
 Pack.fields = {
   effects: many('Effect', 'packs')
 }
 
-class Effect extends BaseModel {}
+export class Effect extends BaseModel {}
 Effect.modelName = 'Effect'
 Effect.reducer = EffectReducer
 Effect.fields = {
@@ -26,18 +26,18 @@ Effect.fields = {
   symptom: fk('Symptom', 'effect')
 }
 
-class Supplement extends BaseModel {}
+export class Supplement extends BaseModel {}
 Supplement.modelName = 'Supplement'
 Supplement.reducer = SupplementReducer
 
-class Symptom extends BaseModel {}
+export class Symptom extends BaseModel {}
 Symptom.modelName = 'Symptom'
 Symptom.reducer = SymptomReducer
 Symptom.fields = {
   symptomGroup: fk('SymptomGroup', 'symptoms')
 }
 
-class SymptomGroup extends BaseModel {}
+export class SymptomGroup extends BaseModel {}
 SymptomGroup.modelName = 'SymptomGroup'
 SymptomGroup.reducer = SymptomGroupReducer
 

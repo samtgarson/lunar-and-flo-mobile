@@ -2,7 +2,6 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import { persistStore, autoRehydrate } from 'redux-persist'
 import { AsyncStorage, Platform } from 'react-native';
 import createSagaMiddleware from 'redux-saga';
-import devTools from 'remote-redux-devtools';
 import createReducer from './reducers';
 import sagas from '../sagas';
 import Settings from '../settings';
@@ -17,15 +16,9 @@ export default function configureStore(initialState = {}) {
     autoRehydrate()
   ];
 
-  if (__DEV__) {
-    enhancers.push(devTools({
-      name: Platform.OS,
-      hostname: 'localhost',
-      port: 5678
-    }));
-  }
+  const composer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-  const store = createStore(createReducer(), initialState, compose(...enhancers));
+  const store = createStore(createReducer(), initialState, composer(...enhancers));
 
   persistStore(store, {storage: AsyncStorage, blacklist: ['topLevelNavigationReducer']});
 

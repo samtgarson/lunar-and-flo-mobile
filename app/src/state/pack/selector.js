@@ -8,8 +8,8 @@ const dbState = state => state.db;
 export default createSelector(
   dbState,
   schema.createSelector((db) => {
+    if (db.Pack.count() == 0) return {}
     const pack = db.Pack.all().orderBy(['createdAt'], false).last() 
-    if (!pack) return;
 
     return {
       ...pack.ref,

@@ -7,14 +7,9 @@ import { initializeApp } from '../../state/top-level-navigation/actions';
 import styles from './styles';
 import MainApplicationNavigation from '../main-application-navigation';
 import OnboardingForm from '../onboarding-form';
-import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
+import SupplementModal from '../supplement-modal';
 
-const {
- popRoute,
- pushRoute
-} = navigationActions;
-
-const { View, NavigationExperimental } = ReactNative;
+const { View, Text, NavigationExperimental } = ReactNative;
 const { CardStack: NavigationCardStack } = NavigationExperimental;
 
 export class TopLevelNavigation extends Component {
@@ -29,7 +24,8 @@ export class TopLevelNavigation extends Component {
   renderScene(props) {
     return {
       mainApplication: <MainApplicationNavigation />,
-      onboarding: <OnboardingForm />
+      onboarding: <OnboardingForm />,
+      supplement: <SupplementModal id={props.scene.route.id} />
     }[props.scene.route.key]
   }
 
