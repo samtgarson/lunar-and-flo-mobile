@@ -5,7 +5,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
+    "test": "find ./app/src -name '*.test.js' | xargs mocha --require app/src/tests.js"
   },
   "engines": {
     "node": ">=4.3"

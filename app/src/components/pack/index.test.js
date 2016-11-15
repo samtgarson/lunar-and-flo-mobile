@@ -4,7 +4,7 @@ import Pack from './index';
 import { PackFactory } from '../../test/support/factory'
 import sinon from 'sinon'
 import sinonChai from 'sinon-chai'
-import chai from 'chai'
+import chai, { expect } from 'chai'
 chai.use(sinonChai)
 
 describe('Pack', () => {

@@ -26,7 +26,7 @@
     "server:watch": "npm run mongo && ./node_modules/.bin/baker run --forever --node_dev --watch ./server/src ./server/src",
     "setup": "./node_modules/.bin/baker run ./.baker/generate.js app",
     "test": "mocha node_modules/baker-scripts/config/test-setup.js --require app/src/tests.js",
-    "test:app": "./node_modules/.bin/baker test-react-native ./app/src/tests.js ./app/src/**/*.test.js",
+    "test:app": "find ./app/src -name '*.test.js' | xargs mocha --require app/src/tests.js",
     "test:baker": "./node_modules/.bin/baker test ./.baker/generators/test/tests/**/*.js",
     "test:server": "./node_modules/.bin/baker test ./server/tests/**/*.js",
     "test:server-setup": "./node_modules/.bin/baker run --forever --test_run ./server/src",

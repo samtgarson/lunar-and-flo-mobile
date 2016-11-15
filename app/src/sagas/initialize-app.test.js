@@ -3,6 +3,7 @@ import {
   INITIALIZE_APP, 
   SHOW_HOME_SCREEN_LOADER 
 }                                 from '../state/constants'
+import { REHYDRATE }              from 'redux-persist/constants';
 import initializeUser             from './initialize-user'
 import bootstrapData              from './bootstrap-data'
 import testSaga                   from 'redux-saga-test-plan';
@@ -21,6 +22,7 @@ describe('initializeApp', () => {
   it('fetches user and bootstraps in parallel', () => {
     expect(generator).to.yield('TAKE').withArgs(INITIALIZE_APP)
     expect(generator).to.yield('PUT').withArgs(SHOW_HOME_SCREEN_LOADER)
+    expect(generator).to.yield('TAKE').withArgs(REHYDRATE)
     expect(generator).to.parallel('CALL').withArgs([initializeUser, bootstrapData])
   })
 })

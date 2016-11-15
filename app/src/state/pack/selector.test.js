@@ -1,27 +1,27 @@
 import packSelector from './selector'
 import schema from '../models';
-import packFixture from '../../test/fixtures/pack';
 import moment from 'moment'
+import { PackFactory } from '../../test/support/factory'
+import { expect } from 'chai'
 
 describe('packSelector', () => {
   let dbState;
   let session;
   let state;
-  let Pack;
 
   beforeEach(() => {
     dbState = schema.getDefaultState()
     session = schema.withMutations(dbState)
-    Pack = session.Pack
   })
 
   it('selects the latest pack', () => {
     const packs = [2, 1, 3].map((i) => {
-      return Pack.create({
-        ...packFixture,
+      const attrs = PackFactory.attributes({
         id: i,
-        createdAt: moment().subtract(i, 'd').format('YYYY-MM-DD')
+        createdAt: moment().subtract(i, 'd').format('YYYY-MM-DD'),
+        effects: []
       })
+      return session.Pack.create(attrs)
     })
     session = schema.from(dbState)
     state = { db: dbState }
