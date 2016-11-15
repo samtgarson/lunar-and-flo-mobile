@@ -2,14 +2,20 @@
 
 ## Quickstart
 
+Setup
+
+```sh
+yarn
+```
+
 Running your app on iOS
 
 ```sh
-npm run ios
+yarn run ios
 ```
 
 Running tests
 
 ```sh
-npm run test:app
+yarn run test
 ```

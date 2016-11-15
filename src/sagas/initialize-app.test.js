@@ -6,7 +6,6 @@ import {
 import { REHYDRATE }              from 'redux-persist/constants';
 import initializeUser             from './initialize-user'
 import bootstrapData              from './bootstrap-data'
-import testSaga                   from 'redux-saga-test-plan';
 import { put, call, take }        from 'redux-saga/effects';
 import chai, { expect }           from 'chai'
 import sagaMatchers               from '../test/support/saga-matchers.js'

@@ -1,54 +1,44 @@
 {
-  "name": "baker",
-  "version": "1.1.0",
-  "private": "true",
-  "engines": {
-    "node": ">=4",
-    "npm": ">=3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thebakeryio/baker.git"
-  },
-  "license": "MIT",
+  "name": "LunarAndFloMobile",
+  "version": "1.0.0",
+  "description": "React Native app powered by Baker",
+  "author": "",
+  "license": "ISC",
   "scripts": {
-    "android": "cd app && react-native run-android",
-    "ci": "npm run test:baker && npm run test:setup && npm run test:app && npm run test:server && npm run test:server-setup",
-    "deploy:server": "./node_modules/.bin/baker push_to_heroku --settings ./settings/production/base,./settings/production/server server",
-    "generate": "./node_modules/.bin/baker run ./.baker/generate.js",
-    "ios": "cd app && react-native run-ios",
-    "lint": "./node_modules/.bin/baker lint app server",
-    "lint:baker": "cd ./.baker && ../node_modules/.bin/baker lint .",
-    "mongo": "./node_modules/.bin/baker mongo",
-    "preinstall": "./.baker/check-npm-version.js",
-    "server": "npm run mongo && ./node_modules/.bin/baker run --forever --node_dev ./server/src",
-    "server:debug": "npm run mongo && ./node_modules/.bin/baker run --forever --node_dev --debug ./server/src",
-    "server:watch": "npm run mongo && ./node_modules/.bin/baker run --forever --node_dev --watch ./server/src ./server/src",
-    "setup": "./node_modules/.bin/baker run ./.baker/generate.js app",
-    "test": "mocha node_modules/baker-scripts/config/test-setup.js --require app/src/tests.js",
-    "test:app": "find ./app/src -name '*.test.js' | xargs mocha --require app/src/tests.js",
-    "test:baker": "./node_modules/.bin/baker test ./.baker/generators/test/tests/**/*.js",
-    "test:server": "./node_modules/.bin/baker test ./server/tests/**/*.js",
-    "test:server-setup": "./node_modules/.bin/baker run --forever --test_run ./server/src",
-    "test:setup": "./node_modules/.bin/baker run ./.baker/ci/run-tests.js"
+    "test": "find ./src -name '*.test.js' | xargs mocha --require src/tests.js",
+    "ios": "react-native run-ios"
+  },
+  "engines": {
+    "node": ">=4.3"
+  },
+  "dependencies": {
+    "change-case-keys": "^0.0.4",
+    "moment": "^2.15.2",
+    "react": "15.3.2",
+    "react-native": "^0.34.0",
+    "react-native-awesome-button": "^1.6.0",
+    "react-native-form-generator": "^0.9.9",
+    "react-native-multistep-wizard": "^0.0.1",
+    "react-native-navigation-redux-helpers": "^0.4.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-persist": "^4.0.0-alpha7",
+    "redux-saga": "^0.11.1",
+    "reselect": "^2.4.0"
   },
   "devDependencies": {
-    "baker-scripts": "*",
-    "change-case": "^2.3.1",
-    "escodegen": "^1.8.0",
-    "esprima": "^2.7.2",
-    "fs-extra": "^0.28.0",
-    "handlebars": "^4.0.5",
-    "lodash": "^4.11.1",
-    "minimist": "^1.2.0",
-    "mkdirp": "^0.5.1",
-    "mockery": "^1.7.0",
-    "redux-saga": "^0.12.0",
-    "redux-saga-test-plan": "^1.3.1",
-    "shelljs": "^0.6.0",
-    "yeoman-assert": "^2.2.1",
-    "yeoman-environment": "^1.6.1",
-    "yeoman-generator": "^0.22.0",
-    "yeoman-test": "^1.4.0"
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.0",
+    "chai-subset": "^1.3.0",
+    "chance": "^1.0.4",
+    "enzyme": "^2.4.1",
+    "react-addons-test-utils": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-native-mock": "^0.2.4",
+    "remote-redux-devtools": "^0.4.9",
+    "remote-redux-devtools-on-debugger": "^0.6.3",
+    "rosie": "^1.6.0",
+    "sinon-chai": "^2.8.0"
   }
 }
