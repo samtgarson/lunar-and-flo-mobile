@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactNative from 'react-native'
 import AwesomeButton from 'react-native-awesome-button'
-import styles from './styles';
+import styles from '../styles';
 import moment from 'moment'
 import Step from './step'
 

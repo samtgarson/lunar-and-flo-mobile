@@ -6,6 +6,8 @@ const dbState = state => state.db;
 export default createSelector(
   dbState,
   schema.createSelector((db) => {
-    return db.Supplement
+    return db.Supplement.map(supplement => ({
+      ...supplement.ref
+    }))
   })
 );

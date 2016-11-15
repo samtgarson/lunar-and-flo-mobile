@@ -9,7 +9,8 @@ const simpleIcon = {
 
 const tabsDefinitions = {
   routes: [
-    { key: 'homeScreen', icon: simpleIcon, title: 'Home' }
+    { key: 'homeScreen', icon: simpleIcon, title: 'Home' },
+    { key: 'supplementList', icon: simpleIcon, title: 'Library' }
   ],
   key: MAIN_APPLICATION_NAVIGATION_KEY,
   index: 0

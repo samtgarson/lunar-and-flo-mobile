@@ -8,7 +8,7 @@ import MultiStep from 'react-native-multistep-wizard'
 import { completeOnboardForm } from '../../state/onboarding-form/actions';
 
 import { createSelector } from 'reselect';
-import styles from './styles';
+import styles from '../styles';
 
 const { View, Text } = ReactNative;
 

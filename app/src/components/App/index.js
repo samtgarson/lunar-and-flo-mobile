@@ -1,6 +1,6 @@
 import ReactNative from 'react-native';
 import React, { Component } from 'react';
-import styles from './styles';
+import styles from '../styles';
 
 import TopLevelNavigation from '../top-level-navigation';
 

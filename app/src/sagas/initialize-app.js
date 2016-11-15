@@ -7,8 +7,9 @@ import { REHYDRATE }              from 'redux-persist/constants';
 
 
 export default function* initializeApp () {
-  yield [take(INITIALIZE_APP), take(REHYDRATE)]
+  yield take(INITIALIZE_APP)
   yield put(showLoader())
+  yield take(REHYDRATE)
   yield [call(initializeUser), call(bootstrapData)]
   yield put(hideLoader())
 }

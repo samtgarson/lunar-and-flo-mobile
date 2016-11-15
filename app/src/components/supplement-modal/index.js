@@ -1,17 +1,19 @@
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import supplementState from '../../state/supplement/selector';
+import styles from '../styles'
 
 class SupplementModal extends Component {
   constructor(props) {
     super(props)
-    this.supplement = props.supplements.withId(props.id)
+    this.supplement = props.supplements.find(s => s.id == props.id)
   }
   render () {
     return (
-      <View>
+      <View style={styles.screen}>
         <Text>{this.supplement.name}</Text>
+        <TouchableOpacity onPress={this.props.dismiss}><Text>X</Text></TouchableOpacity>
       </View>
     )
   }
@@ -19,7 +21,8 @@ class SupplementModal extends Component {
 
 SupplementModal.propTypes = {
   id: React.PropTypes.string.isRequired,
-  supplements: React.PropTypes.func.isRequired,
+  supplements: React.PropTypes.array.isRequired,
+  dismiss: React.PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {

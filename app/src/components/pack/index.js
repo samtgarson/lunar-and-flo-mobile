@@ -3,34 +3,29 @@ import React, { Component } from 'react';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    alignItems: 'flex-start',
-    marginTop: 30
+    alignItems: 'flex-start'
   },
   cell: {
     padding: 20
   }
 });
 
+const renderSupplement = (supplement, pressHandler) => (
+  <TouchableOpacity onPress={() => pressHandler(supplement.id)} style={styles.cell} key={supplement.id}>
+    <Text>{supplement.name}</Text>
+  </TouchableOpacity>
+)
 
-class Pack extends Component {
-  renderSupplement(supplement) {
-    return (
-      <TouchableOpacity onPress={() => this.props.selectSupplement(supplement.id)} style={styles.cell} key={supplement.id}>
-        <Text>{supplement.name}</Text>
-      </TouchableOpacity>
-    )
-  }
-  render() {
-    const { pack } = this.props
-    return (
-      <View style={styles.container}>
-        { pack.effects.map(e => this.renderSupplement(e.supplement) ) }
-      </View>
-    );
-  }
+
+const Pack = (props) => {
+  const { pack, selectSupplement } = props
+  return (
+    <View style={styles.container}>
+      { pack.effects && pack.effects.map(e => renderSupplement(e.supplement, selectSupplement) ) }
+    </View>
+  );
 }
 
 Pack.propTypes = {
