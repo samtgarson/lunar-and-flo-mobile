@@ -20,7 +20,7 @@ export default function configureStore(initialState = {}) {
 
   const store = createStore(createReducer(), initialState, composer(...enhancers));
 
-  persistStore(store, {storage: AsyncStorage, blacklist: ['topLevelNavigationReducer', 'mainApplicationNavigationReducer']});
+  persistStore(store, {storage: AsyncStorage, blacklist: []});
 
   sagas.forEach(saga => sagaMiddleware.run(saga));
 

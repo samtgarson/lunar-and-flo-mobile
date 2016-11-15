@@ -11,9 +11,9 @@ class SupplementModal extends Component {
   }
   render () {
     return (
-      <View style={styles.screen}>
+      <View style={styles.modal}>
         <Text>{this.supplement.name}</Text>
-        <TouchableOpacity onPress={this.props.dismiss}><Text>X</Text></TouchableOpacity>
+        <TouchableOpacity style={{position: 'absolute', top: 30, right: 12}} onPress={this.props.dismiss}><Text>X</Text></TouchableOpacity>
       </View>
     )
   }

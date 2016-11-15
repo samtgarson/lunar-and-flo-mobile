@@ -16,7 +16,7 @@ class HowLongIsYourCycle extends Step {
   }
   render () {
     return (
-      <View style={styles.container}>
+      <View style={styles.modal}>
         <Text>How long is your average cycle?</Text>
         <Text>{this.state.cycleLength} days</Text>
         <Slider 

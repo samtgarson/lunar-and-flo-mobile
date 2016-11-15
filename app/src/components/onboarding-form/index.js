@@ -21,7 +21,7 @@ export class OnboardingForm extends Component {
   }
   render () {
     return (
-      <View style={styles.container}>
+      <View style={styles.modal}>
         <MultiStep steps={steps} onFinish={this.finish.bind(this)}/>
       </View>
     );

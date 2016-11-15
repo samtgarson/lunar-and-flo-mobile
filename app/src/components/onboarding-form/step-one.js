@@ -27,7 +27,7 @@ class HowLongSinceYourLastPeriod extends Step {
   }
   render () {
     return (
-      <View style={styles.container}>
+      <View style={styles.modal}>
         <Text>How many days since your last period?</Text>
         { this.dayLabel() }
         <Slider 

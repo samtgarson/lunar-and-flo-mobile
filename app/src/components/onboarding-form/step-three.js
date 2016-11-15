@@ -16,7 +16,7 @@ class HowLongIsYourPeriod extends Step {
   }
   render () {
     return (
-      <View style={styles.container}>
+      <View style={styles.modal}>
         <Text>How long is your average period?</Text>
         <Text>{this.state.periodLength} day{this.state.periodLength > 1 ? 's' : ''}</Text>
         <Slider 
