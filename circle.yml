@@ -1,0 +1,7 @@
+dependencies:
+  override:
+    - npm i yarn -g
+    - yarn
+test:
+  override:
+    - yarn run test
