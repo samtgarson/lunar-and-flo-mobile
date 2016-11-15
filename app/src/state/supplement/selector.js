@@ -7,7 +7,8 @@ export default createSelector(
   dbState,
   schema.createSelector((db) => {
     return db.Supplement.map(supplement => ({
-      ...supplement.ref
+      ...supplement.ref,
+      symptoms: supplement.effects.map(effect => effect.symptom.ref)
     }))
   })
 );

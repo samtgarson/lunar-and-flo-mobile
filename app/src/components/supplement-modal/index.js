@@ -13,6 +13,7 @@ class SupplementModal extends Component {
     return (
       <View style={styles.modal}>
         <Text>{this.supplement.name}</Text>
+        { this.supplement.symptoms.map(s => <Text key={s.id}>{s.name}</Text>) }
         <TouchableOpacity style={{position: 'absolute', top: 30, right: 12}} onPress={this.props.dismiss}><Text>X</Text></TouchableOpacity>
       </View>
     )

@@ -22,8 +22,8 @@ export class Effect extends BaseModel {}
 Effect.modelName = 'Effect'
 Effect.reducer = EffectReducer
 Effect.fields = {
-  supplement: fk('Supplement', 'effect'),
-  symptom: fk('Symptom', 'effect')
+  supplement: fk('Supplement', 'effects'),
+  symptom: fk('Symptom', 'effects')
 }
 
 export class Supplement extends BaseModel {}
