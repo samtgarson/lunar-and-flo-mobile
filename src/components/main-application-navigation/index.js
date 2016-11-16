@@ -6,7 +6,7 @@ import mainApplicationNavigationState from '../../state/main-application-navigat
 import styles from '../styles';
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
 import HomeScreen from '../home-screen';
-import SupplementList from '../supplement-list';
+import SupplementScreen from '../supplement-screen';
 import { MAIN_APPLICATION_NAVIGATION_KEY } from '../../state/constants'
 import packState from '../../state/pack/selector';
 
@@ -17,16 +17,11 @@ const {
 const { View, TabBarIOS } = ReactNative;
 
 export class MainApplicationNavigation extends Component {
-  constructor(props) {
-    super(props);
-    this.renderTabContent = this.renderTabContent.bind(this);
-  }
-
   renderTabContent(tab) {
     const { showSupplement, pack } = this.props
     return {
       homeScreen: <HomeScreen pack={pack} selectSupplement={showSupplement} />,
-      supplementList: <SupplementList pack={pack} selectSupplement={showSupplement} />
+      supplementScreen: <SupplementScreen pack={pack} selectSupplement={showSupplement} />
     }[tab.key]
   }
 
@@ -40,7 +35,7 @@ export class MainApplicationNavigation extends Component {
         title={tab.title}
         onPress={ () => jumpToTab(i) }
         selected={this.props.MainApplicationNavigationReducer.index === i}>
-        {this.renderTabContent(tab)}
+        {this.renderTabContent.bind(this)(tab)}
       </TabBarIOS.Item>
     ));
     return (

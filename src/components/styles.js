@@ -14,8 +14,4 @@ const modal = {
   justifyContent: 'center'
 }
 
-export default StyleSheet.create({
-  container: container,
-  screen: screen,
-  modal: modal
-});
+export default StyleSheet.create({ container, screen, modal });
