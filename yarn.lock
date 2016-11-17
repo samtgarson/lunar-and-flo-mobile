@@ -3738,6 +3738,10 @@ react-element-to-jsx-string@^5.0.0:
     stringify-object "^2.3.1"
     traverse "^0.6.6"
 
+react-native-animatable:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-0.6.1.tgz#bd85023d42ad0ceb3cc98d7b490f7d6dd6ba11b0"
+
 react-native-awesome-button@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/react-native-awesome-button/-/react-native-awesome-button-1.6.0.tgz#c3d08e9641fd5119b38ad9befe4f59d5b83e3d2a"
