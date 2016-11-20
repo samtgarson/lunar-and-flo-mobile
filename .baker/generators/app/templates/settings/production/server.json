@@ -1,8 +1,0 @@
-{
-  "parseServerMasterKey": "MASTER_KEY",
-  "parseServerDatabaseURI": "MONGO_DB_DATA_BASE_URI",
-  "parseServerDashboardUsers": [{
-    "user":"ADMIN_USER_LOGIN",
-    "pass":"ADMIN_USER_PASSWORD"
-  }]
-}

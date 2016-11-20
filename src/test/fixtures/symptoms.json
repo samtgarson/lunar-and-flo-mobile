@@ -1,0 +1,158 @@
+[
+  {
+    "id": "135930a6-901a-4b03-a19a-04ee6987ee98",
+    "name": "Utapau",
+    "description": "I have a bad feeling about this.",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "a643ce1f-9b86-4e32-bdc7-fb171ddfaf51",
+    "name": "Naboo",
+    "description": "Shut him up or shut him down.",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "9ec5da14-c0ed-4159-9e0d-0c431703327f",
+    "name": "Jakku",
+    "description": "Now, witness the power of this fully operational battle station.",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "2bef1e28-fa46-4468-873e-69aff63e6d60",
+    "name": "Utapau",
+    "description": "Wars not make one great.",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "69265c5b-b003-4995-8866-1ca318ad742b",
+    "name": "Mustafar",
+    "description": "R2-D2, you know better than to trust a strange computer!",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "e5f0cdc4-eec0-40fa-94c3-be659af9ef7b",
+    "name": "Kamino",
+    "description": "Now, witness the power of this fully operational battle station.",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "4f0591f7-a447-431a-9709-349164caa834",
+    "name": "Mustafar",
+    "description": "Adventure. Excitement. A Jedi craves not these things.",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "5720f6f0-84e0-46f6-9ad5-a4e195044aa4",
+    "name": "Endor",
+    "description": "Fear is the path to the dark side... fear leads to anger... anger leads to hate... hate leads to suffering.",
+    "symptom_group_id": "f2219e77-9275-41e4-8198-7681e57fb30d"
+  },
+  {
+    "id": "a4691de3-caf4-4fc2-b5ba-175a483de534",
+    "name": "Jakku",
+    "description": "You will never find a more wretched hive of scum and villainy. We must be cautious.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "24b75627-8b6e-44ac-88b5-cb00d25cd1fa",
+    "name": "Jakku",
+    "description": "You know, that little droid is going to cause me a lot of trouble.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "3d425250-6cf4-4570-a467-044d499779ba",
+    "name": "Dagobah",
+    "description": "Strike me down, and I will become more powerful than you could possibly imagine.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "6d75240e-30b1-4274-9ddd-b35f36f3b369",
+    "name": "Lothal",
+    "description": "I have a bad feeling about this.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "dcd0b896-3bbd-48b0-b620-42d98c13faa2",
+    "name": "Mustafar",
+    "description": "Well, you said you wanted to be around when I made a mistake.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "cb9aa3be-3c28-455d-a46d-149ab6a5cf3d",
+    "name": "Jakku",
+    "description": "Strike me down, and I will become more powerful than you could possibly imagine.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "972dce17-d949-4c2b-84c5-2ee8bb88fada",
+    "name": "Utapau",
+    "description": "Do. Or do not. There is no try.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "3d7fd262-2ea2-4039-9283-97b27172c055",
+    "name": "Coruscant",
+    "description": "A Jedi uses the Force for knowledge and defense, never for attack.",
+    "symptom_group_id": "d85284c0-9c5a-4aa2-8d59-07a7a0214468"
+  },
+  {
+    "id": "87df5ae4-bb7e-4bb2-b883-a65ce780c406",
+    "name": "Kashyyyk",
+    "description": "I find your lack of faith disturbing.",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "f781ca7f-c647-4654-8d92-ffc4b07ddd9d",
+    "name": "DQar",
+    "description": "Wars not make one great.",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "fc7f2ac3-da33-40aa-bee7-c424e028f3fe",
+    "name": "Hoth",
+    "description": "Well, you said you wanted to be around when I made a mistake.",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "c8dee0c7-0403-4a1b-b96f-ff386b4e65a2",
+    "name": "Naboo",
+    "description": "R2-D2, you know better than to trust a strange computer!",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "5952a414-2405-4b5c-9c9a-61718560cf4c",
+    "name": "Sullust",
+    "description": "Truly wonderful, the mind of a child is.",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "ec74f828-f855-48db-add2-1f40e730c2ff",
+    "name": "Kashyyyk",
+    "description": "Well, you said you wanted to be around when I made a mistake.",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "ed13d4fd-93ef-44ab-aadb-ec22dd886c4e",
+    "name": "Geonosis",
+    "description": "Who's the more foolish; the fool, or the fool who follows him?",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "d667e600-7cef-4947-a28a-e29eb8e8a1fe",
+    "name": "Coruscant",
+    "description": "It's not impossible. I used to bullseye womp rats in my T-16 back home, they're not much bigger than two meters.",
+    "symptom_group_id": "4729df78-2f68-49fe-bfe0-8dae6e0c2782"
+  },
+  {
+    "id": "9bf710c0-36b0-410a-b3dc-804c98efbae2",
+    "name": "Hoth",
+    "description": "Now, witness the power of this fully operational battle station.",
+    "symptom_group_id": "fdd63fec-0500-45ce-8a84-b84d53723ac4"
+  },
+  {
+    "id": "d5f22bcf-f357-49bc-9ea8-a085e1016542",
+    "name": "Yavin",
+    "description": "Wars not make one great.",
+    "symptom_group_id": "fdd63fec-0500-45ce-8a84-b84d53723ac4"
+  }
+]

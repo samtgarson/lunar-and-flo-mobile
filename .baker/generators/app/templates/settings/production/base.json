@@ -1,5 +1,0 @@
-{
-  "parseServerApplicationId": "YOUR_PARSE_APPLICATION_ID",
-  "parseServerURL": "https://HEROKU_APP_URL/parse",
-  "graphqlURL": "https://HEROKU_APP_URL/graphql"
-}
