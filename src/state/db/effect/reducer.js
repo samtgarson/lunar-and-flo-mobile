@@ -1,4 +1,4 @@
-import { CREATE_EFFECT } from '../constants'
+import { CREATE_EFFECT } from '../../constants'
 
 export default function reducer (state, action, Effect, session) {
   const { type, payload } = action

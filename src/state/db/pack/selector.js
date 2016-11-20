@@ -1,7 +1,7 @@
-import schema from '../models';
+import schema from '../../models';
 import { createSelector } from 'reselect';
 
-import userState from '../user/selector'
+import userState from '../../user/selector'
 
 const dbState = state => state.db;
 

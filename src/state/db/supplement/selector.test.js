@@ -1,7 +1,7 @@
 import supplementSelector, { filtered as filteredSelector } from './selector'
-import schema from '../models';
+import schema from '../../models';
 import moment from 'moment'
-import { SupplementFactory, SymptomFactory, EffectFactory } from '../../test/support/factory'
+import { SupplementFactory, SymptomFactory, EffectFactory } from '../../../test/support/factory'
 import { expect } from 'chai'
 
 describe('supplementSelector', () => {

@@ -1,4 +1,4 @@
-import { CREATE_SYMPTOM } from '../constants'
+import { CREATE_SYMPTOM } from '../../constants'
 
 export default function reducer (state, action, Symptom, session) {
   const { type, payload } = action

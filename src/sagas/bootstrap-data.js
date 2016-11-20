@@ -1,10 +1,10 @@
 import ApiClient from '../services/api-client'
 import schema from '../state/models'
 import { call, put }        from 'redux-saga/effects';
-import { createSymptom } from '../state/symptom/actions'
-import { createSupplement } from '../state/supplement/actions'
-import { createEffect } from '../state/effect/actions'
-import { createSymptomGroup } from '../state/symptom-group/actions'
+import { createSymptom } from '../state/db/symptom/actions'
+import { createSupplement } from '../state/db/supplement/actions'
+import { createEffect } from '../state/db/effect/actions'
+import { createSymptomGroup } from '../state/db/symptom-group/actions'
 
 const client = new ApiClient()
 

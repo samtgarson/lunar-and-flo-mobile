@@ -1,4 +1,4 @@
-import { CREATE_PACK } from '../constants'
+import { CREATE_PACK } from '../../constants'
 
 export const createPack = attrs => {
   return {

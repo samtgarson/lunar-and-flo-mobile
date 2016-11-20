@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import supplementState from '../../state/supplement/selector';
+import supplementState from '../../state/db/supplement/selector';
 import styles from '../styles'
 
 class SupplementModal extends Component {

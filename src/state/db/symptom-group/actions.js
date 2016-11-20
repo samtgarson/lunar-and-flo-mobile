@@ -1,4 +1,4 @@
-import { CREATE_SYMPTOM_GROUP } from '../constants'
+import { CREATE_SYMPTOM_GROUP } from '../../constants'
 
 export const createSymptomGroup = attrs => {
   return {

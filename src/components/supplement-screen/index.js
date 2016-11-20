@@ -1,6 +1,6 @@
 import React, { Component }                       from 'react';
 import { ListView, Text, View, TouchableOpacity } from 'react-native';
-import { filtered as filteredSupplementState }    from '../../state/supplement/selector'
+import { filtered as filteredSupplementState }    from '../../state/db/supplement/selector'
 import { updateSearchTerm }                       from '../../state/supplement-screen/actions'
 import supplemenetScreenState                     from '../../state/supplement-screen/selector'
 import { connect }                                from 'react-redux';

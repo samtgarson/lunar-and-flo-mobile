@@ -1,9 +1,9 @@
 import {fk, many, Model, Schema} from '../vendor/redux-orm.min';
-import PackReducer from './pack/reducer'
-import SymptomReducer from './symptom/reducer'
-import SupplementReducer from './supplement/reducer'
-import EffectReducer from './effect/reducer'
-import SymptomGroupReducer from './symptom-group/reducer'
+import PackReducer from './db/pack/reducer'
+import SymptomReducer from './db/symptom/reducer'
+import SupplementReducer from './db/supplement/reducer'
+import EffectReducer from './db/effect/reducer'
+import SymptomGroupReducer from './db/symptom-group/reducer'
 
 class BaseModel extends Model {}
 BaseModel.createOrUpdate = function (attrs) {

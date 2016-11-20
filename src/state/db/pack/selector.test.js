@@ -1,7 +1,7 @@
 import packSelector from './selector'
-import schema from '../models';
+import schema from '../../models';
 import moment from 'moment'
-import { PackFactory } from '../../test/support/factory'
+import { PackFactory } from '../../../test/support/factory'
 import { expect } from 'chai'
 
 describe('packSelector', () => {

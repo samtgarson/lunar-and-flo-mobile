@@ -8,7 +8,7 @@ import { actions as navigationActions } from 'react-native-navigation-redux-help
 import HomeScreen from '../home-screen';
 import SupplementScreen from '../supplement-screen';
 import { MAIN_APPLICATION_NAVIGATION_KEY } from '../../state/constants'
-import packState from '../../state/pack/selector';
+import packState from '../../state/db/pack/selector';
 
 const {
  jumpTo

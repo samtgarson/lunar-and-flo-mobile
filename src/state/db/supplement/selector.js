@@ -1,6 +1,6 @@
-import schema from '../models';
+import schema from '../../models';
 import { createSelector } from 'reselect';
-import supplementScreenState from '../supplement-screen/selector'
+import supplementScreenState from '../../supplement-screen/selector'
 
 const dbState = state => state.db;
 

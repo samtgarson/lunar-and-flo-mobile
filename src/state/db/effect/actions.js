@@ -1,4 +1,4 @@
-import { CREATE_EFFECT } from '../constants'
+import { CREATE_EFFECT } from '../../constants'
 
 export const createEffect = attrs => {
   return {

@@ -1,4 +1,4 @@
-import { CREATE_SYMPTOM } from '../constants'
+import { CREATE_SYMPTOM } from '../../constants'
 
 export const createSymptom = attrs => {
   return {

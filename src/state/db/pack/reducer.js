@@ -1,4 +1,4 @@
-import { CREATE_PACK } from '../constants'
+import { CREATE_PACK } from '../../constants'
 
 export default function reducer (state, action, Pack, session) {
   const { type, payload } = action
