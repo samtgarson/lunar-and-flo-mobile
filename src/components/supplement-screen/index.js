@@ -1,6 +1,6 @@
 import React, { Component }                       from 'react';
 import { ListView, Text, View, TouchableOpacity } from 'react-native';
-import supplementState                            from '../../state/supplement/selector'
+import { filtered as filteredSupplementState }    from '../../state/supplement/selector'
 import { updateSearchTerm }                       from '../../state/supplement-screen/actions'
 import supplemenetScreenState                     from '../../state/supplement-screen/selector'
 import { connect }                                from 'react-redux';
@@ -8,7 +8,7 @@ import styles                                     from '../styles'
 import SupplementList                             from '../supplement-list'
 
 const mapStateToProps = state => ({
-  supplements: supplementState(state),
+  supplements: filteredSupplementState(state),
   ...supplemenetScreenState(state)
 })
 

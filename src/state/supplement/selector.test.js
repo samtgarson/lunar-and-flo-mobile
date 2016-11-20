@@ -1,4 +1,4 @@
-import supplementSelector from './selector'
+import supplementSelector, { filtered as filteredSelector } from './selector'
 import schema from '../models';
 import moment from 'moment'
 import { SupplementFactory, SymptomFactory, EffectFactory } from '../../test/support/factory'
@@ -63,7 +63,7 @@ describe('supplementSelector', () => {
           searchTerm: session.Supplement.first().name
         }
       }
-      subject = supplementSelector(state)
+      subject = filteredSelector(state)
     })
 
     it('selects finds the correct the supplement', () => {

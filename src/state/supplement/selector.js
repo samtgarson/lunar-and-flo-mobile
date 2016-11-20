@@ -6,6 +6,14 @@ const dbState = state => state.db;
 
 export default createSelector(
   dbState,
+  schema.createSelector((db) => {
+    let collection = db.Supplement
+    return serialize(collection)
+  })
+);
+
+export const filtered = createSelector(
+  dbState,
   supplementScreenState,
   schema.createSelector((db, { searchTerm }) => {
     let collection = db.Supplement
