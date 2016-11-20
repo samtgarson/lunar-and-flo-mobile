@@ -10,11 +10,14 @@ const { View, Text } = ReactNative;
 
 export class HomeScreen extends Component {
   renderMainScreen () {
-    const { pack, selectSupplement } = this.props
-    return <Pack selectSupplement={selectSupplement} pack={pack} />
+    const { pack, selectSupplement, checkIns } = this.props
+    return (<View>
+      <Pack selectSupplement={selectSupplement} pack={pack} />
+      { checkIns.map(c => <Text>{c.score}</Text>) }
+    </View>)
   }
   render() {
-    const { screen: { showLoader } } = this.props
+    const { showLoader } = this.props
     return (
       <View style={styles.screen}>
         { showLoader ? <Text>Loading...</Text> : this.renderMainScreen() }
@@ -24,14 +27,16 @@ export class HomeScreen extends Component {
 }
 
 HomeScreen.propTypes = {
-  screen: React.PropTypes.object.isRequired,
+  showLoader: React.PropTypes.bool.isRequired,
   pack: React.PropTypes.object,
   selectSupplement: React.PropTypes.func.isRequired,
+  checkIns: React.PropTypes.array
 };
 
 function mapStateToProps(state) {
   return {
-    screen: homeScreenState(state)
+    ...homeScreenState(state),
+    checkIns: checkInState(state)
   }
 }
 

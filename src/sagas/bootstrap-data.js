@@ -5,6 +5,7 @@ import { createSymptom } from '../state/db/symptom/actions'
 import { createSupplement } from '../state/db/supplement/actions'
 import { createEffect } from '../state/db/effect/actions'
 import { createSymptomGroup } from '../state/db/symptom-group/actions'
+import { createCheckIn } from '../state/db/check-in/actions'
 
 const client = new ApiClient()
 
@@ -12,7 +13,8 @@ const fetchers = [
   ['Symptom', createSymptom],
   ['Supplement', createSupplement],
   ['Effect', createEffect],
-  ['SymptomGroup', createSymptomGroup]
+  ['SymptomGroup', createSymptomGroup],
+  ['CheckIn', createCheckIn]
 ].map(callResource)
 
 function callResource ([model, creator]) {

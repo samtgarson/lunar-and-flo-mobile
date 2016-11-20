@@ -4,6 +4,7 @@ import SymptomReducer from './db/symptom/reducer'
 import SupplementReducer from './db/supplement/reducer'
 import EffectReducer from './db/effect/reducer'
 import SymptomGroupReducer from './db/symptom-group/reducer'
+import CheckInReducer from './db/check-in/reducer'
 
 class BaseModel extends Model {}
 BaseModel.createOrUpdate = function (attrs) {
@@ -41,7 +42,14 @@ export class SymptomGroup extends BaseModel {}
 SymptomGroup.modelName = 'SymptomGroup'
 SymptomGroup.reducer = SymptomGroupReducer
 
+export class CheckIn extends BaseModel {}
+CheckIn.modelName = "CheckIn"
+CheckIn.reducer = CheckInReducer
+CheckIn.fields = {
+  symptoms: many('Symptom', 'symptoms')
+}
+
 const schema = new Schema()
-schema.register(Pack, Effect, Supplement, Symptom, SymptomGroup)
+schema.register(Pack, Effect, Supplement, Symptom, SymptomGroup, CheckIn)
 
 export default schema

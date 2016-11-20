@@ -3,6 +3,7 @@ import packFixture from '../test/fixtures/pack.json'
 import symptomFixture from '../test/fixtures/symptoms.json'
 import supplementFixture from '../test/fixtures/supplements.json'
 import effectFixture from '../test/fixtures/effects.json'
+import checkInFixture from '../test/fixtures/check-ins.json'
 import symptomGroupFixture from '../test/fixtures/symptom-groups.json'
 import changeCase from 'change-case-keys'
 
@@ -11,6 +12,7 @@ const resourceFixtures = {
   Symptom: symptomFixture,
   Supplement: supplementFixture,
   Effect: effectFixture,
+  CheckIn: checkInFixture,
   SymptomGroup: symptomGroupFixture,
 }
 
