@@ -5,6 +5,7 @@ import { ONBOARD_FORM_COMPLETE, TOP_LEVEL_NAVIGATION_KEY } from '../state/consta
 import { updateUser }                   from '../state/user/actions'
 import { createPack }                   from '../state/pack/actions'
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
+import { showLoader, hideLoader } from '../state/home-screen/actions'
 
 const { pushRoute, popRoute } = navigationActions;
 
@@ -16,8 +17,10 @@ export default function* initializeUser () {
 
 function* fetchNewUser () {
   const client = new ApiClient()
+  yield put(showLoader())
   newUser = yield call([client, client.fetchUser])
   yield put(updateUser(newUser))
+  yield put(hideLoader())
   return newUser
 }
 
