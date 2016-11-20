@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import React, { Component } from 'react';
+import React from 'react';
 
 const styles = StyleSheet.create({
   container: {
