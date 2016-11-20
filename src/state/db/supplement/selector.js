@@ -17,7 +17,7 @@ export const filtered = createSelector(
   supplementScreenState,
   schema.createSelector((db, { searchTerm }) => {
     let collection = db.Supplement
-    if (searchTerm.length) collection = collection.filter(s => s.name.match(new RegExp(searchTerm, 'gi')))
+    if (searchTerm && searchTerm.length) collection = collection.filter(s => s.name.match(new RegExp(searchTerm, 'gi')))
 
     return serialize(collection)
   })

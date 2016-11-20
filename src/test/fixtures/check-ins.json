@@ -6,7 +6,7 @@
     "score": -4,
     "icon": "sad",
     "period": null,
-    "created_at": "2016-11-20T15:06:17.988Z",
+    "created_at": "2016-11-17T17:42:34.752Z",
     "symptoms": [
       "a4691de3-caf4-4fc2-b5ba-175a483de534",
       "3d425250-6cf4-4570-a467-044d499779ba",
@@ -16,11 +16,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -30,7 +30,7 @@
     "score": 0,
     "icon": "sad",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.006Z",
+    "created_at": "2016-11-15T17:42:34.752Z",
     "symptoms": [
       "2bef1e28-fa46-4468-873e-69aff63e6d60",
       "6d75240e-30b1-4274-9ddd-b35f36f3b369",
@@ -40,11 +40,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -54,7 +54,7 @@
     "score": -2,
     "icon": "sad",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.014Z",
+    "created_at": "2016-11-13T17:42:34.752Z",
     "symptoms": [
       "5720f6f0-84e0-46f6-9ad5-a4e195044aa4",
       "24b75627-8b6e-44ac-88b5-cb00d25cd1fa",
@@ -64,11 +64,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -78,7 +78,7 @@
     "score": 2,
     "icon": "happy",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.017Z",
+    "created_at": "2016-11-11T17:42:34.752Z",
     "symptoms": [
       "a643ce1f-9b86-4e32-bdc7-fb171ddfaf51",
       "2bef1e28-fa46-4468-873e-69aff63e6d60",
@@ -88,11 +88,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -102,7 +102,7 @@
     "score": -4,
     "icon": "caring",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.020Z",
+    "created_at": "2016-11-09T17:42:34.752Z",
     "symptoms": [
       "a4691de3-caf4-4fc2-b5ba-175a483de534",
       "3d425250-6cf4-4570-a467-044d499779ba",
@@ -112,11 +112,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -126,7 +126,7 @@
     "score": 0,
     "icon": "caring",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.023Z",
+    "created_at": "2016-11-07T17:42:34.752Z",
     "symptoms": [
       "e5f0cdc4-eec0-40fa-94c3-be659af9ef7b",
       "87df5ae4-bb7e-4bb2-b883-a65ce780c406",
@@ -136,11 +136,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -150,7 +150,7 @@
     "score": -4,
     "icon": "caring",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.026Z",
+    "created_at": "2016-11-05T17:42:34.752Z",
     "symptoms": [
       "3d7fd262-2ea2-4039-9283-97b27172c055",
       "87df5ae4-bb7e-4bb2-b883-a65ce780c406",
@@ -160,11 +160,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -174,7 +174,7 @@
     "score": 1,
     "icon": "happy",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.029Z",
+    "created_at": "2016-11-03T17:42:34.752Z",
     "symptoms": [
       "9ec5da14-c0ed-4159-9e0d-0c431703327f",
       "2bef1e28-fa46-4468-873e-69aff63e6d60",
@@ -185,11 +185,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -199,7 +199,7 @@
     "score": -4,
     "icon": "caring",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.032Z",
+    "created_at": "2016-11-01T17:42:34.752Z",
     "symptoms": [
       "dcd0b896-3bbd-48b0-b620-42d98c13faa2",
       "87df5ae4-bb7e-4bb2-b883-a65ce780c406",
@@ -209,11 +209,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   },
   {
@@ -223,7 +223,7 @@
     "score": -2,
     "icon": "sad",
     "period": null,
-    "created_at": "2016-11-20T15:06:18.036Z",
+    "created_at": "2016-10-30T17:42:34.752Z",
     "symptoms": [
       "dcd0b896-3bbd-48b0-b620-42d98c13faa2",
       "cb9aa3be-3c28-455d-a46d-149ab6a5cf3d",
@@ -233,11 +233,11 @@
     "weather_report": {
       "id": "2c64ed26-3631-4231-9840-d014fd0405cb",
       "icon": "fog",
-      "cloud_cover": 0.0,
-      "temperature": 24.0,
-      "precip_probability": 0.0,
+      "cloud_cover": 0,
+      "temperature": 24,
+      "precip_probability": 0,
       "precip_type": "sun",
-      "moon_phase": 0.0
+      "moon_phase": 0
     }
   }
 ]

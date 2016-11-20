@@ -7,6 +7,12 @@ const screen = {
   ...container,
   paddingTop: 30,
   paddingHorizontal: 12,
+  position: 'relative'
+}
+
+const tabScreen = {
+  ...screen,
+  paddingBottom: 50
 }
 
 const modal = {
@@ -14,4 +20,4 @@ const modal = {
   justifyContent: 'center'
 }
 
-export default StyleSheet.create({ container, screen, modal });
+export default { container, screen, modal, tabScreen };
