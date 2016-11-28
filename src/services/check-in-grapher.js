@@ -51,7 +51,7 @@ export default class CheckInGrapher {
   }
 
   valueAt(v) {
-    let index = Math.floor((this.curve.length - 1) * v)
+    let index = Math.floor((this.curve.length - 1) * (1))
     index = Math.min(this.curve.length - 1, Math.max(index, 0))
     return this.curve[index].y
   }

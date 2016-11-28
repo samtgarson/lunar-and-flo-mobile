@@ -7,7 +7,7 @@ import Pack from '../pack';
 import Loader from '../loader';
 import moment from 'moment'
 import Grapher from '../../services/check-in-grapher'
-import Svg, { Polyline, Rect } from 'react-native-svg';
+import Svg, { Polyline } from 'react-native-svg';
 
 
 const styles= {
@@ -17,7 +17,16 @@ const styles= {
     right: 0,
     justifyContent: 'center',
     height: 50,
-    bottom: 300
+    bottom: 300,
+    backgroundColor: 'transparent'
+  },
+  spacer: {
+    left: 0, 
+    right: 0, 
+    bottom: 0, 
+    position: 'absolute', 
+    height: 50, 
+    backgroundColor: 'white'
   }
 }
 
@@ -36,7 +45,6 @@ export default class Dashboard extends Component {
   componentWillUpdate () {
     if (this.props.checkIns != this.grapher.data || this.state.chartHeight != this.grapher.height) {
       this.grapher = new Grapher(this.props.checkIns, {height: this.state.chartHeight})
-      console.log(this.grapher)
     }
   }
 
@@ -51,9 +59,8 @@ export default class Dashboard extends Component {
   }
 
   renderChart () {
-    const [x, y, w, h] = this.grapher.viewBox.split(' ')
     return (
-        <View style={{flex: 1}} >
+        <View style={{flex: 1}}>
           <InvertibleScrollView style={{marginVertical: 50}} onLayout={this.handleLayout.bind(this)} scrollEventThrottle={30} onScroll={this.handleScroll.bind(this)} inverted horizontal={true} vertical={false} showsHorizontalScrollIndicator={false}>
             <Svg height={this.grapher.height} viewBox={this.grapher.viewBox} width={this.grapher.width}>
               <Polyline
@@ -64,7 +71,8 @@ export default class Dashboard extends Component {
               />
             </Svg>
           </InvertibleScrollView>  
-          <View style={{left: 0, right: 0, bottom: 0, position: 'absolute', height: 50, backgroundColor: 'white'}} />
+          <Animatable.View transition="bottom" style={{...styles.pin, bottom: this.grapher.percent(this.state.currentProgress) * this.grapher.height}}><Text style={{justifyContent: 'center'}}>Pin</Text></Animatable.View>
+          <View style={styles.spacer} />
         </View>
     )
   }
