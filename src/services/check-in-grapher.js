@@ -57,7 +57,8 @@ export default class CheckInGrapher {
   }
 
   _SVGPoints () {
-    return this.curve.map(({x, y}) => [x*this.dayWidth, y*this.yFactor].join(',')).join(' ')
+    curvePoints = this.curve.map(({x, y}) => [x*this.dayWidth, y*this.yFactor].join(',')).join(' ')
+    return `0,${this.yRange.min * this.yFactor} ${curvePoints} ${this.width},${this.yRange.min * this.yFactor}`
   }
 
   _values() {

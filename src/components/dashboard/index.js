@@ -53,16 +53,19 @@ export default class Dashboard extends Component {
   renderChart () {
     const [x, y, w, h] = this.grapher.viewBox.split(' ')
     return (
-        <InvertibleScrollView style={{marginVertical: 100}} scrollEventThrottle={30} onScroll={this.handleScroll.bind(this)} inverted onLayout={this.handleLayout.bind(this)} horizontal={true} vertical={false} showsHorizontalScrollIndicator={false}>
-          <Svg height={this.grapher.height} viewBox={this.grapher.viewBox} width={this.grapher.width}>
-            <Polyline
-              points={this.grapher.SVGPoints}
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
-          </Svg>
-        </InvertibleScrollView>        
+        <View style={{flex: 1}} >
+          <InvertibleScrollView style={{marginVertical: 50}} onLayout={this.handleLayout.bind(this)} scrollEventThrottle={30} onScroll={this.handleScroll.bind(this)} inverted horizontal={true} vertical={false} showsHorizontalScrollIndicator={false}>
+            <Svg height={this.grapher.height} viewBox={this.grapher.viewBox} width={this.grapher.width}>
+              <Polyline
+                points={this.grapher.SVGPoints}
+                fill="white"
+                stroke="white"
+                strokeWidth="2"
+              />
+            </Svg>
+          </InvertibleScrollView>  
+          <View style={{left: 0, right: 0, bottom: 0, position: 'absolute', height: 50, backgroundColor: 'white'}} />
+        </View>
     )
   }
 

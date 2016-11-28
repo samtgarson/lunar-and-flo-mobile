@@ -41,9 +41,11 @@ describe('CheckInGrapher', () => {
     it ('generates a string of points', () => {
       points = subject.SVGPoints.split(' ')
 
-      expect(points[points.length - 1]).to.eq('300,4')
+      expect(points[points.length - 1]).to.eq('300,0')
+      expect(points[points.length - 2]).to.eq('300,4')
       expect(points).to.include('200,6')
       expect(points).to.include('100,2')
+      expect(points[1]).to.eq('0,0')
       expect(points[0]).to.eq('0,0')
     })
   })
@@ -94,9 +96,19 @@ describe('CheckInGrapher', () => {
 
     it ('generates a string of points', () => {
       points = subject.SVGPoints.split(' ')
-      expect(points[0]).to.eq('0,6')
+
+      expect(points[0]).to.eq('0,3')
+      expect(points[1]).to.eq('0,6')
       expect(points).to.include('80,9')
+      expect(points[points.length - 2]).to.eq('160,3')
       expect(points[points.length - 1]).to.eq('160,3')
+    })
+
+    it ('calculates the correct viewbox', () => {
+      const view = subject.viewBox
+      const expected = '0 9 160 -6'
+
+      expect(view).to.eql(expected)
     })
   })
 });
